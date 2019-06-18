@@ -1,0 +1,6 @@
+assets/svgs/**
+assets/webfonts/**
+error_log
+README.md
+boilerplate.html
+.git/**

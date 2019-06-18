@@ -1,0 +1,1027 @@
+/*
+Theme Name: Theme Name
+Author: PrettyDamnGood
+Author URI: https://www.prettydamngood.com.au/
+Description: Site Description
+Version: 1.0
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 Normalize
+2.0 Accessibility
+3.0 Colours
+4.0 Font Sizing
+5.0 Typography
+6.0 Forms
+7.0 General Formatting and Layout
+8.0 Lists
+9.0 Tables
+10.0 Links
+11.0 Buttons
+12.0 Navigation
+13.0 Page Specific Styling
+   13.1 Header
+   13.2 Front Page
+   13.3 Regular Content
+   13.4 Posts
+   13.5 Pages
+   13.6 Footer
+14.0 Plugin Styling
+15.0 Images and Backgrounds
+16.0 CSS Animations
+17.0 Widgets
+18.0 Sizing Utilities
+19.0 Media Queries
+20.0 Fonts
+21.0 Font Imports
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+1.0 Normalise
+--------------------------------------------------------------*/
+
+button,hr,input{overflow:visible}audio,canvas,progress,video{display:inline-block}progress,sub,sup{vertical-align:baseline}html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figure{margin:1em 0}hr{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;height:0}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:1px #767676 dotted;text-decoration:none}b,strong{font-weight:700}dfn{font-style:italic}mark{background-color:#eee;color:#222}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:ButtonText dotted 1px}fieldset{border:1px solid #bbb;margin:0 2px;padding:.35em .625em .75em}legend{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}[hidden],template{display:none}#wp-admin-bar-my-account{display:none !important;}
+
+/*--------------------------------------------------------------
+2.0 Accessibility
+--------------------------------------------------------------*/
+
+/* Text meant only for screen readers. */
+.screen-reader-text{clip:rect(1px,1px,1px,1px);height:1px;overflow:hidden;position:absolute!important;width:1px;word-wrap:normal!important}.screen-reader-text:focus{background-color:#f1f1f1;-webkit-border-radius:3px;border-radius:3px;-webkit-box-shadow:0 0 2px 2px rgba(0,0,0,.6);box-shadow:0 0 2px 2px rgba(0,0,0,.6);clip:auto!important;color:#21759b;display:block;font-size:14px;font-size:.875rem;font-weight:700;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}
+
+/*--------------------------------------------------------------
+3.0 Colours
+--------------------------------------------------------------*/
+
+html{
+	/* Colours */
+	--primary-color: #FF0000;
+	--secondary-color: #051033;
+	--white: white;
+	--black: black;
+	--lightGrey: #efefef;
+	--darkGrey: grey;
+	--primaryFont: 'Playfair Display', Georgia, Times New Roman, serif;
+	--secondaryFont: 'Poppins', Helvetica, Arial, sans-serif;
+	--linkHoverColor: #003BDE;
+	--selectionColor: #FFD500;
+
+	/* Others */
+	--siteShadow: rgba(0, 0, 0, 0.08) 0px 1px 2px, rgba(0, 0, 0, 0.04) 0px 5px 12px;
+	--siteShadowHover: rgba(0, 0, 0, 0.09) 1px 2px 3px, rgba(0, 0, 0, 0.05) 1px 7px 13px;
+	--buttonBorderRadius: 22px;
+	--buttonPadding: 8px 18px 8px 18px;
+	--buttonPaddingMobile:  6px 12px 6px 12px;
+	--siteTransition: 0.125s;
+
+	text-rendering: optimizeLegibility;
+	scroll-behavior: smooth;
+	line-height: 1.5;
+}
+
+*::selection{
+	background: var(--selectionColor);
+}
+
+body{
+	background: var(--white);
+}
+
+.color--primary{
+	color: var(--primary-color);
+}
+
+.background--primary{
+	background-color: var(--primary-color);
+}
+
+.color--secondary{
+	color: var(--secondary-color);
+}
+
+.background--secondary{
+	background-color: var(--secondary-color);
+}
+
+.color--light-grey{
+	color: var(--lightGrey)
+}
+
+.background--light-grey{
+	background-color: var(--lightGrey);
+}
+
+.color--dark-grey{
+	color: var(--darkGrey);
+}
+
+.background--dark-grey{
+	background-color: var(--darkGrey);
+}
+
+.color--white{
+	color: var(--white);
+}
+
+.background--white{
+	background-color: var(--white);
+}
+
+.color--black{
+	color: var(--black);
+}
+
+.background--black{
+	background-color: var(--black);
+}
+
+/*--------------------------------------------------------------
+4.0 Font Sizes
+--------------------------------------------------------------*/
+
+body{
+	font-size: 16px; /*Sets base pixel size for em units*/
+}
+
+h1, h2, .h1, .h2, .page-title {
+	font-family: var(--primaryFont);
+	font-weight: 900;
+}
+
+h3, h4, h5, .h3, .h4, .h5, p, .preheader, .nav-item, .section-header, .testimonial-text, td, li{
+	font-family: var(--secondaryFont);
+}
+
+.page-title{
+	font-size: 3.5rem; /* 56px */
+}
+
+.feature-header{
+	font-size: 2.1875rem; /* 35px */
+}
+
+.section-header, .testimonial-text{
+	font-size: 1.75rem; /* 28px */
+}
+
+.page-title, .preheader, .preheader--small, .section-header{
+	margin-bottom: 1.5625rem; /* 1.5625rem */
+}
+
+.preheader{
+	font-size: 1.25rem; /* 1.25rem */
+}
+
+p, .nav-item{
+	font-size: 1.00rem; /* 16px */
+	font-weight: 400;
+}
+
+.disclaimer-text, .fineprint-text{
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+}
+
+/*--------------------------------------------------------------
+5.0 Typography
+--------------------------------------------------------------*/
+
+.thin, .font-weight--100 {
+	font-weight: 100;
+}
+
+.extra-light, .font-weight--200{
+	font-weight: 200;
+}
+
+.light, .font-weight--300 {
+	font-weight: 300;
+}
+
+.font-weight--400{
+	font-weight: 400;
+}
+
+.medium, .font-weight--500 {
+	font-weight: 500;
+}
+
+.semi-bold, .font-weight--600 {
+	font-weight: 600;
+}
+
+.bold, .font-weight--700  {
+	font-weight: 700;
+}
+
+.extra-bold, .font-weight--800 {
+	font-weight: 800;
+}
+
+/*--------------------------------------------------------------
+6.0 Forms
+--------------------------------------------------------------*/
+
+/* Wordpress Contact Form 7 */
+.wpcf7-form-control-wrap{
+  width: 100%;
+}
+
+.wpcf7-form-control.g-recaptcha.wpcf7-recaptcha{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+/*--------------------------------------------------------------
+7.0 General Formatting and Layout
+--------------------------------------------------------------*/
+
+.featured-image{
+	width: 100% !important;
+	height: auto !important;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+section{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.vertical-align{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.horizontal-align{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.left-0{
+	left: 0;
+}
+
+.right-0{
+	right: 0;
+}
+
+.bottom-0{
+	bottom: 0;
+}
+
+.top-0{
+	top: 0;
+}
+
+.offscreen {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.p-fl{
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+.p-fl-wide{
+	padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.overflow-x-hidden{
+	overflow-x:hidden;
+}
+
+.pseudo--fullsize{
+	position: relative;
+	z-index: 1;
+}
+
+.pseudo--fullsize:after{
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: -1;
+	bottom:0;
+}
+
+svg{
+	width: 40px;
+	height: 40px;
+	fill: var(--primary-color);
+}
+
+/*--------------------------------------------------------------
+7.1 Box Styling
+--------------------------------------------------------------*/
+
+.box-shadow{
+	box-shadow: var(--siteShadow);
+}
+
+.box-shadow:hover{
+	box-shadow: var(--siteShadowHover);
+}
+
+.box-rounded{
+	border-radius: var(--buttonBorderRadius);
+}
+
+.box-border{
+	border: 1px solid var(--primary-color);
+}
+
+/*--------------------------------------------------------------
+8.0 lists
+--------------------------------------------------------------*/
+
+ul, li, ol, #sidenav li, .navbar li{
+	list-style-type: none;
+}
+
+li.list--checkbox {
+	text-indent: -50px;
+	padding-left: 40px;
+}
+
+.list--checkbox::before {
+	content: ' ';
+	display: inline-block;
+	margin-right: 0.625rem;
+	background-image: url('./assets/images/icon-tick.png');
+	background-size: contain;
+	background-position: center;
+	background-repeat:  no-repeat;
+	height: 1.5625rem;
+	width: 2.5rem;
+}
+
+.list--no-bullets, .list--no-bullets li{
+	list-style-type: none;
+}
+
+/*--------------------------------------------------------------
+9.0 Tables
+--------------------------------------------------------------*/
+
+table{
+	width: 100%;
+}
+
+/*--------------------------------------------------------------
+10.0 Links
+--------------------------------------------------------------*/
+
+a:hover{
+	cursor: pointer;
+	color: var(--linkHoverColor);
+}
+
+a:hover, a:active {
+	text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+11.0 Buttons
+--------------------------------------------------------------*/
+
+button:hover{
+	cursor: pointer;
+}
+
+/* Universal Button Styling */
+.btn-link__white, .btn-link__primary, .btn-link__secondary, .btn-link__black, .btn-link__warning{
+	border-radius: var(--buttonBorderRadius);
+	padding:- var(--buttonPadding);
+}
+
+.btn-link__white{
+	color: var(--primary-color);
+	background-color: var(--white);
+}
+
+.btn-link__white:hover {
+	background-color: var(--primary-color);
+	color: var(--white);
+	cursor: pointer;
+}
+
+.btn-link__primary{
+	background-color: var(--primary-color);
+	color: var(--white);
+}
+
+.btn-link__primary:hover {
+	background-color: var(--white);
+	color: var(--primary-color);
+	cursor: pointer;
+}
+
+.btn-link__secondary{
+	background-color: var(--secondary-color);
+	color: black;
+}
+
+.btn-link__secondary:hover {
+	color: var(--primary-color);
+	cursor: pointer;
+}
+
+.btn-link__black{
+	color: var(--white);
+	background-color: var(--black);
+	border: 1px solid var(--black);
+}
+
+.btn-link__black:hover{
+	color: var(--white);
+	box-shadow: var(--siteShadow);
+}
+
+.btn-link__warning{
+	color: var(--black);
+	background-color: var(--white);
+	border: 1px solid var(--black);
+}
+
+.btn-link__warning:hover{
+	cursor: pointer;
+}
+
+/*--------------------------------------------------------------
+12.0 Navigation
+--------------------------------------------------------------*/
+
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	overflow-x: hidden;
+	transition: 0.5s;
+	z-index: 1000;
+	padding-top: 10vh;
+}
+
+.sidenav a{
+	text-decoration: none;
+	font-size: 1.5rem;
+	display: block;
+}
+
+.sidenav .closebtn {
+	position: absolute;
+	top: 60px;
+	right: 30px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+.navbar-toggler svg {
+	fill: white;
+	stroke: white;
+	height: 40px;
+	width: 25px;
+}
+
+/* Nav Hover Effects */
+nav ul li a {
+  text-decoration: none;
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+
+/* stroke */
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: var(--secondary-color);
+  height: 1px;
+}
+
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+nav.fill ul li a {
+  transition: all 0.5s;
+}
+
+nav.fill ul li a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+
+nav.fill ul li a:hover {
+  color: #fff;
+  z-index: 1;
+}
+
+nav.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 0.75s forwards;
+  -webkit-animation: fill 0.75s forwards;
+  -moz-animation: fill 0.75s forwards;
+  opacity: 1;
+}
+
+/*--------------------------------------------------------------
+13.0 Page Specific Styling
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+13.1 Header
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+13.2 Footer
+--------------------------------------------------------------*/
+
+
+.footer__header, .footer__item{
+ font-size: 0.875rem;
+}
+
+.footer__item{
+ font-weight: 400;
+ margin-bottom: 0.625rem;
+}
+
+.footer__header{
+ font-weight: 700;
+ margin-bottom: 1.25rem;
+}
+
+.footer__list, .footer__list li{
+	list-style-type: none;
+}
+
+.social-link svg{
+	height: 25px;
+	width: 25px;
+	fill: var(--secondary-color);
+}
+
+.social-link svg:hover{
+	fill: var(--primary-color);
+}
+
+/*--------------------------------------------------------------
+13.2 Front Page
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+13.3 Other Main Pages
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+13.4 Page.PHP
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+14.0 Plugin Styling
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+15.0 Images and Backgrounds
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+16.0 CSS Animations
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+17.0 Widgets
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+18.0 Sizing Utility Classes
+--------------------------------------------------------------*/
+
+.max-x-50{
+	max-width: 50px;
+}
+
+.max-x-100{
+	max-width: 100px;
+}
+
+.max-x-150{
+	max-width: 150px;
+}
+
+.max-x-200{
+	max-width: 200px;
+}
+
+.max-x-250{
+	max-width: 250px;
+}
+
+.max-x-300{
+	max-width: 300px;
+}
+
+.max-x-350{
+	max-width: 350px;
+}
+
+.max-x-400{
+	max-width: 400px;
+}
+
+.max-x-450{
+	max-width: 450px;
+}
+
+.max-x-500{
+	max-width: 500px;
+}
+
+.max-x-550{
+	max-width: 550px;
+}
+
+.max-x-600{
+	max-width: 600px;
+}
+
+.max-x-650{
+	max-width: 650px;
+}
+
+.max-x-700{
+	max-width: 700px;
+}
+
+.max-x-750{
+	max-width: 750px;
+}
+
+.max-x-800{
+	max-width: 800px;
+}
+
+.max-x-850{
+	max-width: 850px;
+}
+
+.max-x-900{
+	max-width: 900px;
+}
+
+.max-x-950{
+	max-width: 950px;
+}
+
+.max-x-1000{
+	max-width: 1000px;
+}
+
+.min-x-50{
+	min-width: 50px;
+}
+
+.min-x-100{
+	min-width: 100px;
+}
+
+.min-x-150{
+	min-width: 150px;
+}
+
+.min-x-200{
+	min-width: 200px;
+}
+
+.min-x-250{
+	min-width: 250px;
+}
+
+.min-x-300{
+	min-width: 300px;
+}
+
+.min-x-350{
+	min-width: 350px;
+}
+
+.min-x-400{
+	min-width: 400px;
+}
+
+.min-x-450{
+	min-width: 450px;
+}
+
+.min-x-500{
+	min-width: 500px;
+}
+
+.min-x-550{
+	min-width: 550px;
+}
+
+.min-x-600{
+	min-width: 600px;
+}
+
+.min-x-650{
+	min-width: 650px;
+}
+
+.min-x-700{
+	min-width: 700px;
+}
+
+.min-x-750{
+	min-width: 750px;
+}
+
+.min-x-800{
+	min-width: 800px;
+}
+
+.min-x-850{
+	min-width: 850px;
+}
+
+.min-x-900{
+	min-width: 900px;
+}
+
+.min-x-950{
+	min-width: 950px;
+}
+
+.min-x-1000{
+	min-width: 1000px;
+}
+
+.max-y-50{
+	max-height: 50px;
+}
+
+.max-y-100{
+	max-height: 100px;
+}
+
+.max-y-150{
+	max-height: 150px;
+}
+
+.max-y-200{
+	max-height: 200px;
+}
+
+.max-y-250{
+	max-height: 250px;
+}
+
+.max-y-300{
+	max-height: 300px;
+}
+
+.max-y-350{
+	max-height: 350px;
+}
+
+.max-y-400{
+	max-height: 400px;
+}
+
+.max-y-450{
+	max-height: 450px;
+}
+
+.max-y-500{
+	max-height: 500px;
+}
+
+.max-y-550{
+	max-height: 550px;
+}
+
+.max-y-600{
+	max-height: 600px;
+}
+
+.max-y-650{
+	max-height: 650px;
+}
+
+.max-y-700{
+	max-height: 700px;
+}
+
+.max-y-750{
+	max-height: 750px;
+}
+
+.max-y-800{
+	max-height: 800px;
+}
+
+.max-y-850{
+	max-height: 850px;
+}
+
+.max-y-900{
+	max-height: 900px;
+}
+
+.max-y-950{
+	max-height: 950px;
+}
+
+.max-y-1000{
+	max-height: 1000px;
+}
+
+.min-y-50{
+	min-height: 50px;
+}
+
+.min-y-100{
+	min-height: 100px;
+}
+
+.min-y-150{
+	min-height: 150px;
+}
+
+.min-y-200{
+	min-height: 200px;
+}
+
+.min-y-250{
+	min-height: 250px;
+}
+
+.min-y-300{
+	min-height: 300px;
+}
+
+.min-y-350{
+	min-height: 350px;
+}
+
+.min-y-400{
+	min-height: 400px;
+}
+
+.min-y-450{
+	min-height: 450px;
+}
+
+.min-y-500{
+	min-height: 500px;
+}
+
+.min-y-550{
+	min-height: 550px;
+}
+
+.min-y-600{
+	min-height: 600px;
+}
+
+.min-y-650{
+	min-height: 650px;
+}
+
+.min-y-700{
+	min-height: 700px;
+}
+
+.min-y-750{
+	min-height: 750px;
+}
+
+.min-y-800{
+	min-height: 800px;
+}
+
+.min-y-850{
+	min-height: 850px;
+}
+
+.min-y-900{
+	min-height: 900px;
+}
+
+.min-y-950{
+	min-height: 950px;
+}
+
+.min-y-1000{
+	min-height: 1000px;
+}
+
+/*--------------------------------------------------------------
+19.0 Media Queries
+--------------------------------------------------------------*/
+@media screen and (max-width: 2560px){
+}
+@media screen and (max-width: 1440px){
+	.p-fl{
+    padding-left: 6rem;
+    padding-right: 6rem;
+	}
+	.p-fl-wide{
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+@media screen and (max-width: 1200px){
+}
+@media screen and (max-width: 1080px){
+}
+@media screen and (max-width: 1024px){
+	.p-fl{
+		padding-left: 3rem;
+		padding-right: 3rem;
+	}
+	.p-fl-wide{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media screen and (max-width: 991px){
+	section{
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+	}
+}
+@media screen and (max-width: 767px){
+	.p-fl{
+    padding-left: 2rem;
+    padding-right: 2rem;
+	}
+	.btn-link__white, .btn-link__primary, .btn-link__secondary, .btn-link__black, .btn-link__warning{
+		padding:- var(--buttonPaddingMobile);
+	}
+}
+@media screen and (max-width: 576px){
+	section{
+		padding-top: 1.5rem;
+		padding-bottom: 1.5rem;
+	}
+}
+@media screen and (max-width: 425px){
+	.p-fl, .p-fl-wide {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+@media screen and (max-width: 375px){
+}
+@media screen and (max-width: 320px){
+}
+
+/*--------------------------------------------------------------
+21.0 Font Imports
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+22.0 SVG Objects
+--------------------------------------------------------------*/
+
+
