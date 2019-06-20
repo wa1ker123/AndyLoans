@@ -2,18 +2,18 @@
   <div class="container">
     <div class="row">
       <div class="col-12 col-lg-6 order-2 order-lg-1 my-auto">
-        <h2 class="section-header">What you'll need to apply</h2>
+        <h2 class="section-header">You’ll need to be:</h2>
         <div class="loan-criteria-card">
           <h3 class="loan-criteria-card__title">You'll need to be:</h3>
-          <p class="loan-criteria-card__criteria-item">at least 18 years old</p>
-          <p class="loan-criteria-card__criteria-item">an American Citizen</p>
-          <p class="loan-criteria-card__criteria-item">or a Permanent Resident</p>
+          <p class="loan-criteria-card__criteria-item">Over 18 years of age</p>
+          <p class="loan-criteria-card__criteria-item">An American citizen</p>
+          <p class="loan-criteria-card__criteria-item">Or permanent resident</p>
         </div>
         <div class="loan-criteria-card">
-          <h3 class="loan-criteria-card__title">You'll need to have:</h3>
-          <p class="loan-criteria-card__criteria-item">a valid mobile number</p>
-          <p class="loan-criteria-card__criteria-item">a valid email address</p>
-          <p class="loan-criteria-card__criteria-item">a regular income for the last 3 months</p>
+          <h3 class="loan-criteria-card__title">You’ll need to have:</h3>
+          <p class="loan-criteria-card__criteria-item">A regular source of income for at least 3 months</p>
+          <p class="loan-criteria-card__criteria-item">Permanent address and checking account</p>
+          <p class="loan-criteria-card__criteria-item">Employment information</p>
         </div>
       </div>
       <div class="col-12 col-lg-6 text-center order-1 order-lg-2 mb-4 mb-lg-0 px-0 px-lg-3">

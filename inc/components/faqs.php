@@ -2,9 +2,9 @@
   <div class="container">
     <div class="row">
       <div class="col-12 col-lg-6">
-        <h2 class="section-header">Ask away.</h2>
+        <h2 class="section-header">Ask Andy.</h2>
         <p class="mb-4">
-          Transparency is at the heart of Andy Loans' business and we don't believe in silly questions.
+          There is no such thing as a stupid question. Ask Andy today about your application, outcome or our lender-finding process.
         </p>
         <a href="<?php echo get_site_url(); ?>/faqs/" class="btn btn-link__secondary mb-5 mb-lg-0">View all FAQs</a>
       </div>

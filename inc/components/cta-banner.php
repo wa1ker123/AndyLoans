@@ -1,38 +1,38 @@
 <section class="background--black cta-banner">
   <div class="container">
     <div class="row">
-      <div class="col-8">
-        <h3 class="cta-banner__title">Borrowing Made Easy.</h3>
+      <div class="col-12 col-lg-6">
+        <h3 class="cta-banner__title">Loans that take minutes, not days.</h3>
         <div class="row">
-        <div class="col-12 col-lg-6 mb-3">
+        <div class="col-6 mb-3">
           <div class="cta-banner-usp">
-            <h4 class="cta-banner-usp__title">No early</h4>
+            <h4 class="cta-banner-usp__title">100% online</h4>
             <p class="cta-banner-usp__copy">
-              repayment fees
+              Apply in minutes
             </p>
           </div>
         </div>
-        <div class="col-12 col-lg-6 mb-3">
+        <div class="col-6 mb-3">
           <div class="cta-banner-usp">
-            <h4 class="cta-banner-usp__title">No ongoing</h4>
+            <h4 class="cta-banner-usp__title">Flexible loan terms</h4>
             <p class="cta-banner-usp__copy">
-              repayment fees
+              Between 2 to 5 years
             </p>
           </div>
         </div>
-        <div class="col-12 col-lg-6 mb-3">
+        <div class="col-6 mb-3">
           <div class="cta-banner-usp">
-            <h4 class="cta-banner-usp__title">Choose between</h4>
+            <h4 class="cta-banner-usp__title">No extra fees</h4>
             <p class="cta-banner-usp__copy">
-              repayment fees
+              For repaying your loan early
             </p>
           </div>
         </div>
-        <div class="col-12 col-lg-6 mb-0">
+        <div class="col-6 mb-0">
           <div class="cta-banner-usp">
             <h4 class="cta-banner-usp__title">Borrow</h4>
             <p class="cta-banner-usp__copy">
-              repayment fees
+              From $300 to $10,000
             </p>
           </div>
         </div>

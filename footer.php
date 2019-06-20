@@ -68,7 +68,8 @@
 				<div class="container">
 					<div class="row">
 						<div class="col">
-							<small>Monzi is a trading name of LEADPAL PTY LTD. ABN 15 625 489 161. Australian Credit Licence 507 797. We are a referral service only and do not directly fund any credit product. Your request will be referred to a third party lender who will contact you directly to ascertain if they can facilitate your requirements. The third party will inform you of their fees, charges and terms as relevant to your application before you would enter any contract with them. We may receive a referral fee (amount not ascertainable) from the third party depending on the outcome of their dealings with you. It is recommended that you obtain independent legal and financial advice before taking up any products that you may be referred to and offered.</small>
+							<b>Material disclosure</b>
+							<small>APR Disclosure. Some states have laws limiting the Annual Percentage Rate (APR) that a lender can charge you. APRs for cash advance loans range from 200% and 1386%, APRs for installment loans range from 6.63% to 225%, and APRs for personal loans range from 4.99% to 450% and vary by lender. Loans from a state that has no limiting laws or loans from a bank not governed by state laws may have an even higher APR. The APR is the rate at which your loan accrues interest and is based upon the amount, cost and term of your loan, repayment amounts and timing of payments. Lenders are legally required to show you the APR and other terms of your loan before you execute a loan agreement. APR rates are subject to change.</small>
 						</div>
 					</div>
 				</div>

@@ -55,9 +55,9 @@
 										<img src="<?php echo DIRECTORY; ?>/assets/images/icon-shield.svg" alt="Illustration of hand holding a phone" class="img-fluid header-title-card__usp-icon mr-4">
 									</div>
 									<div class="col-12 col-lg-8 col-xl-10 ">
-										<h3 class="header-title-card__usp-title">Data Protection</h3>
+										<h3 class="header-title-card__usp-title">Secure data</h3>
 										<p class="header-title-card__usp-copy">
-											Lorem ipsum
+											Protect your data with smart third-party encryption
 										</p>
 									</div>
 								</div>
@@ -70,9 +70,9 @@
 									<img src="<?php echo DIRECTORY; ?>/assets/images/icon-clock.svg" alt="Illustration of hand holding a phone" class="img-fluid header-title-card__usp-icon mr-4">
 								</div>
 								<div class="col-12 col-lg-8 col-xl-10 ">
-									<h3 class="header-title-card__usp-title">Data Protection</h3>
+									<h3 class="header-title-card__usp-title">100% online</h3>
 									<p class="header-title-card__usp-copy">
-										Lorem ipsum
+										Online for your convenience
 									</p>
 								</div>
 							</div>
@@ -85,9 +85,9 @@
 									<img src="<?php echo DIRECTORY; ?>/assets/images/icon-phone.svg" alt="Illustration of hand holding a phone" class="img-fluid header-title-card__usp-icon mr-4">
 								</div>
 								<div class="col-12 col-lg-8 col-xl-10 ">
-									<h3 class="header-title-card__usp-title">Data Protection</h3>
+									<h3 class="header-title-card__usp-title">Speedy decisions</h3>
 									<p class="header-title-card__usp-copy">
-										Lorem ipsum
+										Smart decisions you don’t have to wait for
 									</p>
 								</div>
 							</div>
@@ -100,9 +100,9 @@
 									<img src="<?php echo DIRECTORY; ?>/assets/images/icon-fist.svg" alt="Illustration of hand holding a phone" class="img-fluid header-title-card__usp-icon mr-4">
 								</div>
 								<div class="col-12 col-lg-8 col-xl-10 ">
-									<h3 class="header-title-card__usp-title">Data Protection</h3>
+									<h3 class="header-title-card__usp-title">Transparent fees</h3>
 									<p class="header-title-card__usp-copy">
-										Lorem ipsum
+										We work with trusted lenders
 									</p>
 								</div>
 							</div>

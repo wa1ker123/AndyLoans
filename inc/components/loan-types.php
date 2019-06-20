@@ -2,8 +2,8 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h2 class="section-header">Types of loans</h2>
-        <p>No matter what the ocassion, Andy Loans has got your back.</p>
+        <h2 class="section-header mb-3">Types of Loans</h2>
+        <p class="mb-5">Medical bills due? Car repairs needed? We may have the h-andy loan for you.</p>
       </div>
     </div>
   </div>
