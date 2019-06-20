@@ -150,6 +150,10 @@ h1, h2, .h1, .h2, .page-title, h3, .section-header{
 	font-weight: 700;
 }
 
+h1{
+	font-size: 4rem;
+}
+
  h4, h5, .h3, .h4, .h5, p, .preheader, .nav-item, td, li{
 	font-family: var(--secondaryFont);
 }
@@ -576,9 +580,15 @@ nav.fill ul li a:hover:after {
 13.1 Header
 --------------------------------------------------------------*/
 .header-title-card{
-	background-color: var(--black);
-	opacity: 0.6;
-	padding: 1rem;
+	background-color: rgba(0,0,0,0.8);
+	padding: 3rem;
+}
+
+.header-title-card__section{
+		background: url('assets/images/image-header-bg.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: left;
 }
 
 .header-title-card__headline{
@@ -606,6 +616,15 @@ nav.fill ul li a:hover:after {
 .header-title-card__usp-icon{
 	width: 40px;
 	height: 40px;
+}
+
+.section--header{
+	padding-top: 20rem;
+	padding-bottom: 0;
+}
+
+#masthead{
+	overflow-x: hidden;
 }
 
 /*--------------------------------------------------------------
