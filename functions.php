@@ -219,6 +219,7 @@ function twentyseventeen_scripts() {
 	// Theme stylesheet.
 	wp_enqueue_style( 'twentyseventeen-style', get_stylesheet_uri(), array('bootstrap-css') );
 
+	wp_enqueue_style( 'fa-min-css', get_template_directory_uri() . '/assets/css/all.min.css' );
 
 	// Site JS
 	wp_enqueue_script( 'site-js', get_template_directory_uri() . '/assets/js/site.js', array(), '4.1.3', true );
@@ -231,9 +232,9 @@ function twentyseventeen_scripts() {
 	//wp_enqueue_style('animate-css', get_template_directory_uri() . '/assets/css/animate.css');
 
 	// Owl Carousel stylesheets and scripts
-	//wp_enqueue_style( 'owl-style', get_theme_file_uri('/assets/css/owl.carousel.min.css'));
-	//wp_enqueue_style( 'owl-default-style', get_theme_file_uri('/assets/css/owl.theme.default.min.css'));
-	//wp_enqueue_script( 'owl-script', get_theme_file_uri( 'assets/js/owl.carousel.min.js'), array(), '1.0', true);
+	wp_enqueue_style( 'owl-style', get_theme_file_uri('/assets/css/owl.carousel.min.css'));
+	wp_enqueue_style( 'owl-default-style', get_theme_file_uri('/assets/css/owl.theme.default.min.css'));
+	wp_enqueue_script( 'owl-script', get_theme_file_uri( 'assets/js/owl.carousel.min.js'), array(), '1.0', true);
 
 	$twentyseventeen_l10n = array(
 		'quote' => twentyseventeen_get_svg( array( 'icon' => 'quote-right' ) ),
@@ -384,7 +385,7 @@ function getPageSource(){
 	if (!$_SESSION["source"]) {
 		$_SESSION["source"] = isset($_GET["source"]) ? $_GET["source"] : "";
 	}
-	
+
 	if (!$_SESSION["source"]) {
 		$current_page = sanitize_post( $GLOBALS['wp_the_query']->get_queried_object() );
 		$slug = $current_page->post_name;

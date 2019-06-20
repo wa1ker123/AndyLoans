@@ -33,6 +33,7 @@
 	<!-- Navigation and Sidenav -->
 	<?php include_once 'inc/components/navigation.php' ?>
 
+	<!-- -->
 
 </header><!-- #masthead -->
 

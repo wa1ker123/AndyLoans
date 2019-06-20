@@ -8,18 +8,22 @@
 
 get_header(); ?>
 
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h2 class="section-header">Wordpress quick startup framework</h2>
-				<p>Created by the pdg team</p>
-      </div>
-    </div>
-  </div>
-</section>
+<!-- How It Works section -->
+<?php include_once 'inc/components/how-it-works.php'; ?>
 
+<!-- Loan Criteria section -->
+<?php include_once 'inc/components/loan-criteria.php'; ?>
 
+<!-- Frequently Asked Questions (FAQ) section -->
+<?php include_once 'inc/components/faqs.php'; ?>
 
+<!-- Testimonials section -->
+<?php include_once 'inc/components/testimonials.php'; ?>
+
+<!-- Loan Types section -->
+<?php include_once 'inc/components/loan-types.php'; ?>
+
+<!-- CTA Banner -->
+<?php include_once 'inc/components/cta-banner.php'; ?>
 
 <?php get_footer(); ?>

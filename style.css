@@ -57,23 +57,23 @@ button,hr,input{overflow:visible}audio,canvas,progress,video{display:inline-bloc
 
 html{
 	/* Colours */
-	--primary-color: #FF0000;
-	--secondary-color: #051033;
+	--primary-color: #FE840E;
+	--secondary-color: #FFF3E7;
 	--white: white;
-	--black: black;
-	--lightGrey: #efefef;
-	--darkGrey: grey;
-	--primaryFont: 'Playfair Display', Georgia, Times New Roman, serif;
-	--secondaryFont: 'Poppins', Helvetica, Arial, sans-serif;
+	--black: #151515;
+	--lightGrey: #F9F9F9;
+	--darkGrey: #515151;
+	--primaryFont: 'Montserrat', Fallback, Helvetica, Arial, sans-serif;
+	--secondaryFont: 'Raleway', Fallback, Helvetica, Arial, sans-serif;
 	--linkHoverColor: #003BDE;
 	--selectionColor: #FFD500;
 
 	/* Others */
-	--siteShadow: rgba(0, 0, 0, 0.08) 0px 1px 2px, rgba(0, 0, 0, 0.04) 0px 5px 12px;
-	--siteShadowHover: rgba(0, 0, 0, 0.09) 1px 2px 3px, rgba(0, 0, 0, 0.05) 1px 7px 13px;
-	--buttonBorderRadius: 22px;
-	--buttonPadding: 8px 18px 8px 18px;
-	--buttonPaddingMobile:  6px 12px 6px 12px;
+	--siteShadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+	--siteShadowHover: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	--buttonBorderRadius: 6px;
+	--buttonPadding: 1rem;
+	--buttonPaddingMobile:  1.5rem 3rem;
 	--siteTransition: 0.125s;
 
 	text-rendering: optimizeLegibility;
@@ -130,7 +130,7 @@ body{
 }
 
 .color--black{
-	color: var(--black);
+	color: var(--black) !important;
 }
 
 .background--black{
@@ -145,13 +145,17 @@ body{
 	font-size: 16px; /*Sets base pixel size for em units*/
 }
 
-h1, h2, .h1, .h2, .page-title {
+h1, h2, .h1, .h2, .page-title, h3, .section-header{
 	font-family: var(--primaryFont);
-	font-weight: 900;
+	font-weight: 700;
 }
 
-h3, h4, h5, .h3, .h4, .h5, p, .preheader, .nav-item, .section-header, .testimonial-text, td, li{
+ h4, h5, .h3, .h4, .h5, p, .preheader, .nav-item, td, li{
 	font-family: var(--secondaryFont);
+}
+
+h3{
+	font-size: 1.25rem;
 }
 
 .page-title{
@@ -162,12 +166,12 @@ h3, h4, h5, .h3, .h4, .h5, p, .preheader, .nav-item, .section-header, .testimoni
 	font-size: 2.1875rem; /* 35px */
 }
 
-.section-header, .testimonial-text{
-	font-size: 1.75rem; /* 28px */
+.section-header{
+	font-size: 1.85rem; /* 30px */
 }
 
 .page-title, .preheader, .preheader--small, .section-header{
-	margin-bottom: 1.5625rem; /* 1.5625rem */
+	margin-bottom: 2.5rem; /* 1.5625rem */
 }
 
 .preheader{
@@ -250,8 +254,8 @@ img{
 }
 
 section{
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .vertical-align{
@@ -354,6 +358,7 @@ svg{
 
 ul, li, ol, #sidenav li, .navbar li{
 	list-style-type: none;
+	list-style-position: outside;
 }
 
 li.list--checkbox {
@@ -409,7 +414,7 @@ button:hover{
 /* Universal Button Styling */
 .btn-link__white, .btn-link__primary, .btn-link__secondary, .btn-link__black, .btn-link__warning{
 	border-radius: var(--buttonBorderRadius);
-	padding:- var(--buttonPadding);
+	padding: var(--buttonPadding);
 }
 
 .btn-link__white{
@@ -435,12 +440,14 @@ button:hover{
 }
 
 .btn-link__secondary{
-	background-color: var(--secondary-color);
+	background-color: none;
 	color: black;
+	border: 2px solid var(--primary-color);
 }
 
 .btn-link__secondary:hover {
-	color: var(--primary-color);
+	color: var(--black);
+	background-color: var(--primary-color);
 	cursor: pointer;
 }
 
@@ -568,6 +575,38 @@ nav.fill ul li a:hover:after {
 /*--------------------------------------------------------------
 13.1 Header
 --------------------------------------------------------------*/
+.header-title-card{
+	background-color: var(--black);
+	opacity: 0.6;
+	padding: 1rem;
+}
+
+.header-title-card__headline{
+	font-family: var(--primaryFont);
+	font-weight: 700;
+	color: var(--white);
+}
+
+.header-title-card__usp{
+
+}
+
+.header-title-card__usp-title{
+	font-family: var(--primaryFont);
+	font-size: 1.25rem;
+	color: var(--white);
+}
+
+.header-title-card__usp-copy{
+	font-family: var(--secondaryFont);
+	font-size: 1rem;
+	color: var(--white);
+}
+
+.header-title-card__usp-icon{
+	width: 40px;
+	height: 40px;
+}
 
 /*--------------------------------------------------------------
 13.2 Footer
@@ -605,6 +644,241 @@ nav.fill ul li a:hover:after {
 /*--------------------------------------------------------------
 13.2 Front Page
 --------------------------------------------------------------*/
+h2.how-it-works__header{
+	margin-bottom: 5rem;
+}
+
+.how-it-works-card{
+	background: var(--white);
+	border-radius: 10px;
+	padding: 2rem;
+	min-height: 250px;
+}
+
+.how-it-works-card__title{
+	font-weight: bold;
+	color: var(--black);
+}
+
+.how-it-works-card__copy{
+	font-size: 1rem;
+	color: var(--darkGrey);
+	margin-bottom: 0;
+}
+
+.how-it-works-card__image{
+	background: var(--white);
+	border: 1px solid #EEEEEE;
+	border-radius: 10px;
+	box-sizing: border-box;
+	margin-bottom: -15px;
+}
+
+.how-it-works-card__image-container{
+	/* background: var(--white);
+	border: 1px solid #EEEEEE;
+	border-radius: 10px;
+	box-sizing: border-box;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: -50%;
+	width: 120px;
+	height: 120px;
+	margin-left: auto;
+	margin-right: auto; */
+}
+
+.loan-criteria-card{
+	background: var(--lightGrey);
+	padding: 1rem;
+	border-left: 4px solid var(--primary-color);
+	border-radius: 10px;
+}
+
+.loan-criteria-card:nth-child(2){
+	margin-bottom: 2.5rem;
+}
+
+.loan-criteria-card__title{
+	font-weight: bold;
+	margin-bottom: 1.25rem;
+}
+
+.loan-criteria-card__criteria-item{
+	font-size: 1.25rem;
+	margin-bottom: 1.25rem;
+}
+
+.loan-criteria-card__criteria-item:last-child{
+	margin-bottom: 0;
+}
+
+.loan-criteria-card__criteria-item::before{
+	content: '';
+	display: inline-block;
+	background: url('assets/images/tick.svg');
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-right: 0.5rem;
+	width: 25px;
+	height: 25px;
+
+}
+
+.faq-card{
+	background: var(--white);
+	border-left: 4px solid var(--primary-color);
+	border-radius: 0.5rem;
+	padding: 1.5rem;
+	margin-bottom: 1.25rem;
+}
+
+.faq-card:last-child{
+	margin-bottom: 0;
+}
+
+.faq-card__title{
+	color: var(--black);
+}
+
+.faq-card__copy{
+	color: var(--darkGrey);
+	margin-bottom: 0;
+}
+
+.faq-card__title::before{
+	content: '?';
+}
+
+.faq-card__copy::before{
+	content: 'A:';
+}
+
+.faq-card__title::before, .faq-card__copy::before{
+	display: inline-block;
+	font-family: var(--primaryFont);
+	color: var(--black);
+	opacity: 0.5;
+	margin-right: 0.5rem;
+	width: 25px;
+	height: 25px;
+	font-weight: bold;
+}
+
+.testimonials{
+
+}
+
+.testimonials__title{
+	font-size: 1.875rem;
+	font-weight: 700;
+	margin-bottom: 1.25rem;
+}
+
+.testimonials__review{
+	font-size: 1.625rem;
+	font-weight: 400;
+	margin-bottom: 1.25rem;
+}
+
+/* .testimonials__review::before, .testimonials__review::after {
+	content: '"';
+	display: inline;
+	width: 10px;
+	height: 10px;
+} */
+
+.testimonials__reviewer{
+	font-size: 1rem;
+	color: var(--darkGrey);
+}
+
+.cta-banner{
+	background: url('assets/images/image-cta-banner.png');
+	background-size: cover;
+	padding-top: 8rem;
+	padding-bottom: 8rem;
+}
+
+.cta-banner__title{
+	font-family: var(--primaryFont);
+	font-size: 1.875rem;
+	color: var(--white);
+	margin-bottom: 2.5rem;
+}
+
+.cta-banner-usp{
+	border-left: 3px solid var(--primary-color);
+	padding-left: 0.5rem;
+}
+
+.cta-banner-usp__title{
+	font-size: 1.25rem;
+	font-weight: bold;
+	color: var(--white);
+}
+
+.cta-banner-usp__copy{
+	font-size: 1rem;
+	color: var(--white);
+}
+
+.cta-banner__button{
+	background: rgba(254, 132, 14,0.7) !important;
+}
+
+.loan-types{
+
+}
+
+.loan-types__image{
+	background-repeat: no-repeat !important;
+	background-position: center;
+	min-height: 200px;
+	background-size: 100% !important;
+	position: relative;
+	border-radius: 10px;
+}
+
+.loan-types__title{
+	font-family: var(--primaryFont);
+	font-size: 1.25rem;
+	color: var(--white);
+	font-weight: bold;
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	margin: 0;
+}
+
+.loan-types--image__dental{
+	background: url('assets/images/image-loan-type-dental.png');
+}
+
+.loan-types--image__renovation{
+	background: url('assets/images/image-loan-type-renovation.png');
+}
+
+.loan-types--image__car-registration{
+	background: url('assets/images/image-loan-type-car-registration.png');
+}
+
+.loan-types--image__medical{
+	background: url('assets/images/image-loan-type-medical.png');
+}
+
+.loan-types--image__white-goods{
+	background: url('assets/images/image-loan-type-white-goods.png');
+}
+
+.loan-types--image__holiday{
+	background: url('assets/images/image-loan-type-holiday.png');
+}
+
+#site-logo{
+	width: 10rem;
+}
 
 /*--------------------------------------------------------------
 13.3 Other Main Pages
@@ -615,9 +889,47 @@ nav.fill ul li a:hover:after {
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
-14.0 Plugin Styling
+13.6 Footer
 --------------------------------------------------------------*/
 
+footer{
+	background: var(--black);
+}
+
+footer *{
+	color: white;
+}
+
+/*--------------------------------------------------------------
+14.0 Plugin Styling
+--------------------------------------------------------------*/
+.owl-dots {
+    display: none;
+}
+.owl-nav{
+	margin-top: 25px !important;
+	text-align: left !important;
+}
+
+.owl-arrows-icon{
+	font-size: 2rem;
+}
+
+i.fas.fa-arrow-left, i.fas.fa-arrow-right{
+	font-size: 1.5rem;
+}
+
+i.fas.fa-arrow-left{
+	color: var(--black);
+}
+
+i.fas.fa-arrow-right{
+	color: var(--primary-color);
+}
+
+button.owl-prev, button.owl-next{
+	background: none !important;
+}
 /*--------------------------------------------------------------
 15.0 Images and Backgrounds
 --------------------------------------------------------------*/
@@ -982,11 +1294,35 @@ nav.fill ul li a:hover:after {
     padding-left: 2rem;
     padding-right: 2rem;
   }
+	.loan-types__image{
+		min-height: 220px;
+		margin-bottom: 25px;
+	}
 }
 @media screen and (max-width: 991px){
 	section{
 		padding-top: 2rem;
 		padding-bottom: 2rem;
+	}
+	.how-it-works-card{
+		min-height: unset;
+		margin-bottom: 2rem;
+		padding: 3rem 2rem;
+	}
+	h2.how-it-works__header{
+		margin-bottom: 3rem;
+	}
+	.loan-types__image{
+		margin-bottom: 15px;
+	}
+	.loan-criteria-card__criteria-item, .faq-card__copy{
+		font-size: 0.9rem;
+	}
+	h3{
+		font-size: 1rem;
+	}
+	.testimonials__review{
+		font-size: 1.25rem;
 	}
 }
 @media screen and (max-width: 767px){
@@ -995,7 +1331,10 @@ nav.fill ul li a:hover:after {
     padding-right: 2rem;
 	}
 	.btn-link__white, .btn-link__primary, .btn-link__secondary, .btn-link__black, .btn-link__warning{
-		padding:- var(--buttonPaddingMobile);
+		padding: var(--buttonPaddingMobile);
+	}
+	.how-it-works-card{
+		padding: 1rem;
 	}
 }
 @media screen and (max-width: 576px){
@@ -1003,25 +1342,74 @@ nav.fill ul li a:hover:after {
 		padding-top: 1.5rem;
 		padding-bottom: 1.5rem;
 	}
+	.cta-banner{
+		background: url('assets/images/image-cta-banner-mobile.png');
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		padding: 3rem 0;
+	}
 }
 @media screen and (max-width: 425px){
 	.p-fl, .p-fl-wide {
     padding-left: 1rem;
     padding-right: 1rem;
   }
+	.loan-types__image{
+		min-height: 225px;
+	}
 }
 @media screen and (max-width: 375px){
+	.loan-types__image{
+		min-height: 175px;
+	}
+	.page-title, .preheader, .preheader--small, .section-header{
+		margin-bottom: 1.25rem;
+	}
 }
 @media screen and (max-width: 320px){
+	.loan-types__image{
+		min-height: 150px;
+	}
+	.loan-types__title{
+		font-size: 0.9rem;
+	}
 }
 
 /*--------------------------------------------------------------
 21.0 Font Imports
 --------------------------------------------------------------*/
+@font-face {
+    font-family: 'Montserrat';
+    src: url('assets/fonts/Montserrat-Bold.woff2') format('woff2'),
+        url('assets/fonts/Montserrat-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
 
+@font-face {
+    font-family: 'Raleway';
+    src: url('assets/fonts/Raleway-Bold.woff2') format('woff2'),
+        url('assets/fonts/Raleway-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
 
+@font-face {
+    font-family: 'Montserrat';
+    src: url('assets/fonts/Montserrat-Regular.woff2') format('woff2'),
+        url('assets/fonts/Montserrat-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('assets/fonts/Raleway-Regular.woff2') format('woff2'),
+        url('assets/fonts/Raleway-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 /*--------------------------------------------------------------
 22.0 SVG Objects
 --------------------------------------------------------------*/
-
-
