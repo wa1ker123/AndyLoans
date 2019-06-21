@@ -17,7 +17,7 @@
       <div class="col-12 text-center mb-5 px-0 px-lg-3">
         <img src="<?php echo DIRECTORY; ?>/assets/images/image-about-us.png" alt="Woman with curly hair wearing a colourful necklace thinking while smiling" class="img-fluid">
       </div>
-      <div class="col-12 mb-5 mb-lg-0">
+      <div class="col-12 mb-5">
         <h2 class="section-header">Why bank on Andy Loans?</h2>
         <p>
           We think consumers deserve a break. Applying for the loan you need, shouldn’t take days. So, we’re ready to connect you with a lender in minutes.* With no joining fees, you can apply without the hassle of searching for the “right” lender.
