@@ -45,9 +45,9 @@
 						<div class="mb-3 mb-md-0">
 							<h4 class="footer__header">Further Information</h4>
 							<a href="<?php echo get_site_url(); ?>/privacy-policy/"><p class="footer__item">Privacy Policy</p></a>
-							<a href="<?php echo get_site_url(); ?>/acknowledgement-and-consent/" ><p class="footer__item">Acknowledgement & Consent</p></a>
-							<a href="<?php echo get_site_url(); ?>/website-policy/"><p class="footer__item">Website Policy</p></a>
-							<a href="<?php echo get_site_url(); ?>/dispute-resolution-policy/"><p class="footer__item">Dispute Resolution Policy</p></a>
+							<a href="<?php echo get_site_url(); ?>/material-disclosure/" ><p class="footer__item">Material Disclosure</p></a>
+							<a href="<?php echo get_site_url(); ?>/polic-on-responsible-lending/"><p class="footer__item">Policy On Responsible Lending</p></a>
+							<a href="<?php echo get_site_url(); ?>/terms-and-conditions/"><p class="footer__item">Terms and Conditions</p></a>
 						</div>
 						<div class="mb-3 mb-md-0">
 							<h4 class="footer__header">Socials</h4>

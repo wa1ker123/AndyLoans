@@ -29,8 +29,7 @@
 		<li class="py-3"><a class="color--white" href="<?php echo get_site_url(); ?>/">Home</a></li>
 		<li class="py-3"><a class="color--white" href="<?php echo get_site_url(); ?>/how-it-works/">How It Works</a></li>
 		<li class="py-3"><a class="color--white" href="<?php echo get_site_url(); ?>/faq/">FAQ</a></li>
-		<li class="py-3"><a class="color--white" href="<?php echo get_site_url(); ?>/blog/">Blog</a></li>
-		<li class="py-3"><a class="color--white" href="<?php echo get_site_url(); ?>/contact-us/">Contact</a></li>
+		<li class="py-3"><a class="color--white" href="<?php echo get_site_url(); ?>/contact/">Contact</a></li>
 		<li class="py-3"><a class="color--white btn btn-link__primary w-50 mx-auto" href="apply">Apply Now</a></li>
 	</ul>
 </div>
