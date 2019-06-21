@@ -39,7 +39,7 @@
       </div>
       <div class="row">
         <div class="col">
-          <a href="<?php echo get_site_url(); ?>/faqs/" class="btn btn-link__primary cta-banner__button mb-5 mb-lg-0 color--black">View all FAQs</a>
+          <a href="<?php echo get_site_url(); ?>/faq/" class="btn btn-link__primary cta-banner__button mb-5 mb-lg-0 color--black">View all FAQs</a>
         </div>
       </div>
       </div>
