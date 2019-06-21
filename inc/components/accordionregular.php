@@ -1,5 +1,5 @@
 <?php
-		
+
 	/* 	Takes an array and generates accordion cards for each paired item.
 	A value should be given for parent if there are multiple accordions
 	located on the one page.  */
@@ -21,7 +21,7 @@
 			}
 
 			echo
-			
+
 			'
 			<div class="col-12 py-3 accordion-item">
 				<div class="' .$collapse. '" aria-controls="faq-'.$parent.'-'.$itemCount.'" aria-expanded="false" data-target="#faq-'.$parent.'-'.$itemCount.'" data-toggle="collapse" id="faq-'.$parent.'-'.$itemCount.'-heading">
@@ -36,8 +36,8 @@
 					<div class="card-body">
 						'.$faqAnswer.'
 					</div>
-				</div>	
-			</div>				
+				</div>
+			</div>
 			'
 			;
 			$itemCount ++;

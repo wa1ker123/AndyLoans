@@ -1,4 +1,4 @@
-<section class="background--light-grey">
+<section class="<?php if(is_page('how-it-works')){echo 'background--light-grey';}else{echo 'background--white';}?>">
 <div class="container">
 <div class="row">
 <div class="col">
