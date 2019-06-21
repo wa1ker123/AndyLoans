@@ -1,19 +1,3 @@
-<?php
-//Loan Amount Values
-$loanAmountMin = 300;
-$loanAmountMax = 10000;
-$loanAmountStep = 100;
-$loanAmountStartingVal = 2500;
-$loanAmountUnit = '$';
-
-//Loan Term Values
-$loanTermMin = 13;
-$loanTermMax = 24;
-$loanTermStep = 1;
-$loanTermStartingVal = 18;
-$loanTermUnit = ' Months';
-?>
-
 
 <form id="loan-calculator" class="app-form loan-calculator  my-md-2 mx-sm-0 my-sm-0 mx-lg-4 my-lg-4" autocomplete="on" oninput="formUpdate()" method="GET" action="<?php echo APPLICATION_URL ?>">
 
@@ -22,7 +6,7 @@ $loanTermUnit = ' Months';
 		<div class="col-12 text-center">
 			<input type="hidden" name="source" value="<?php echo $_SESSION['source'] ?>" />
 			<input id="loan-amount-unit" type="hidden" value="<?php echo $loanAmountUnit ?>" />
-			<input id="loan-term-unit" type="hidden" value="<?php echo $loanTermUnit ?>" />
+			<input id="loan-term-unit" type="hidden" value="<?php echo $LOAN_TERM_UNIT ?>" />
 			<h1 class="page-title">Welcome to Our website</h1>
 			<p class="">The only lender-finder site you need.</p>
 		</div>
@@ -34,12 +18,12 @@ $loanTermUnit = ' Months';
 			<p class="color--primary slider-label">LOAN AMOUNT</p>
 		</div>
 		<div class="col-12">
-			<div class="slider-tooltip text-center" id="loan-amount-bubble"><p id="loan-amount-tooltip"><?php echo $loanAmountUnit . number_format($loanAmountStartingVal); ?></p></div>
-			<input type="range" name="loan_amount" aria-label="Loan Amount" id="loan-amount" value="<?php echo $loanAmountStartingVal ?>" min="<?php echo $loanAmountMin; ?>" max="<?php echo $loanAmountMax; ?>" step="<?php echo $loanAmountStep; ?>">
+			<div class="slider-tooltip text-center" id="loan-amount-bubble"><p id="loan-amount-tooltip"><?php echo LOAN_CURRENCY_UNIT . number_format($LOAN_DEFAULT_VALUE); ?></p></div>
+			<input type="range" name="loan_amount" aria-label="Loan Amount" id="loan-amount" value="<?php echo $LOAN_DEFAULT_VALUE ?>" min="<?php echo LOAN_MIN; ?>" max="<?php echo LOAN_MAX; ?>" step="<?php echo $LOAN_STEP; ?>">
 		</div>
 		<div class="col-12 d-flex justify-content-between">
-			<p class="d-inline"><?php echo $loanAmountUnit . number_format($loanAmountMin); ?></p>
-			<p class="d-inline"><?php echo $loanAmountUnit . number_format($loanAmountMax); ?></p>
+			<p class="d-inline"><?php echo $loanAmountUnit . number_format(LOAN_MIN); ?></p>
+			<p class="d-inline"><?php echo $loanAmountUnit . number_format(LOAN_MAX); ?></p>
 		</div>
 	</div>
 
