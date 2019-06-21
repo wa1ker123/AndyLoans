@@ -67,7 +67,7 @@
 			<section class="disclaimer py-4 mt-0 mt-lg-5">
 				<div class="container">
 					<div class="row">
-						<div class="col">
+						<div class="col" style="opacity:0.7;">
 							<b>Material disclosure</b>
 							<small>APR Disclosure. Some states have laws limiting the Annual Percentage Rate (APR) that a lender can charge you. APRs for cash advance loans range from 200% and 1386%, APRs for installment loans range from 6.63% to 225%, and APRs for personal loans range from 4.99% to 450% and vary by lender. Loans from a state that has no limiting laws or loans from a bank not governed by state laws may have an even higher APR. The APR is the rate at which your loan accrues interest and is based upon the amount, cost and term of your loan, repayment amounts and timing of payments. Lenders are legally required to show you the APR and other terms of your loan before you execute a loan agreement. APR rates are subject to change.</small>
 						</div>
