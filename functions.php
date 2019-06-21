@@ -23,6 +23,8 @@
 	define('LACC_LOAN_MAX', 10000);
 	define('LOAN_MIN', SACC_LOAN_MIN);
 	define('LOAN_MAX', LACC_LOAN_MAX);
+	define('LOAN_STEP', '100');
+	define('LOAN_DEFAULT_VALUE', '2500');
 	/**** Website Global Constants ******/
 
 

@@ -1,8 +1,8 @@
 <?php
 //Loan Amount Values
-LOAN_MIN = 300;
-LOAN_MAX = 10000;
-$loanAmountStep = 100;
+$loanAmountMin = 300;
+$loanAmountMax = 10000;
+LOAN_STEP = 100;
 $loanAmountStartingVal = 2500;
 $loanAmountUnit = '$';
 
@@ -35,11 +35,11 @@ $loanTermUnit = ' Months';
 		</div>
 		<div class="col-12">
 			<div class="slider-tooltip text-center" id="loan-amount-bubble"><p id="loan-amount-tooltip"><?php echo $loanAmountUnit . number_format($loanAmountStartingVal); ?></p></div>
-			<input type="range" name="loan_amount" aria-label="Loan Amount" id="loan-amount" value="<?php echo $loanAmountStartingVal ?>" min="<?php echo LOAN_MIN; ?>" max="<?php echo LOAN_MAX; ?>" step="<?php echo $loanAmountStep; ?>">
+			<input type="range" name="loan_amount" aria-label="Loan Amount" id="loan-amount" value="<?php echo $loanAmountStartingVal ?>" min="<?php echo $loanAmountMin; ?>" max="<?php echo $loanAmountMax; ?>" step="<?php echo LOAN_STEP; ?>">
 		</div>
 		<div class="col-12 d-flex justify-content-between">
-			<p class="d-inline"><?php echo $loanAmountUnit . number_format(LOAN_MIN); ?></p>
-			<p class="d-inline"><?php echo $loanAmountUnit . number_format(LOAN_MAX); ?></p>
+			<p class="d-inline"><?php echo $loanAmountUnit . number_format($loanAmountMin); ?></p>
+			<p class="d-inline"><?php echo $loanAmountUnit . number_format($loanAmountMax); ?></p>
 		</div>
 	</div>
 
