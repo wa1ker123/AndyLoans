@@ -13,11 +13,24 @@ function formUpdate(){
 
 function updateFormInput(loan){
 
+
 	//Disclaimers shown to the user
-	// let disclaimer = document.getElementById('loan-disclaimer');
-	// let saccDisclaimer = '<small>The maximum you will be charged is a flat 20% Establishment Fee and a flat 4% Monthly Fee. The maximum comparison rate on loans between $300 and $2000 is 199.43%.<br><br>WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate with the lender that finances your loan.</small>';
-	// let maccDisclaimer = '<small>The Interest Rate for Secured Medium Loans is 48%. Maximum Comparison Rate is 67.41% p.a.<br><br>WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate with the lender that finances your loan.</small>';
-	// let laccDisclaimer = '<small>The Interest Rate for Secured Large Amount Loans is 21.24%. Maximum Comparison Rate is 48% p.a.<br><br>WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate with the lender that finances your loan.</small>';
+	const disclaimer = document.getElementById('loan-disclaimer');
+	let saccDisclaimer = 'The maximum you will be charged is a flat 20% Establishment Fee and a flat 4% Monthly Fee. The maximum comparison rate on loans between $300 and $2000 is 199.43% p.a. This comparison rate is based on a small amount credit contract of $1,000 repaid over 6 months with an establishment fee of 20% and monthly fees of 4%. <br><br>	WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate with the lender that finances your loan.';
+	let maccDisclaimer = 'The Interest Rate for Secured Medium Loans starts at 12% p.a. (APR) which gives a comparison Rate of 20.56% p.a. This comparison rate is based on a medium amount credit contract of $3,000 repaid over 2 years with a $400 establishment fee. The above repayment amount is based on an interest  rate of 47.80% and establishment fee of $400 <br><br>	WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate with the lender that finances your loan.';
+	let laccDisclaimer = 'The Interest  Rate for Secured Large Amount Loans starts at 12% p.a. (APR) which gives a comparison Rate of 19.88% p.a. This comparison rate is based on a large amount credit contract of $5,000 repaid over 2 years with a $800 establishment fee. The above repayment amount is based on an interest  rate of 21.24% <br><br>	WARNING: This comparison rate is true only for the examples given and may not include all fees and charges. Different terms, fees or other loan amounts might result in a different comparison rate with the lender that finances your loan.';
+
+	if(loan <= 2000){
+		disclaimer.innerHTML = saccDisclaimer;
+	}
+	
+	if(loan > 2000 && loan < 5000){
+		disclaimer.innerHTML = maccDisclaimer;
+	}
+
+	if(loan >= 5000){
+		disclaimer.innerHTML = laccDisclaimer;
+	}
 	
 	document.getElementById('loan-amount-tooltip').innerHTML = loanAmountUnit + numberWithCommas(loan);
 

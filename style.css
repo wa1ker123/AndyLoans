@@ -336,6 +336,12 @@ svg{
 	fill: var(--primary-color);
 }
 
+.disclaimer svg{
+	width: 25px;
+	height: 25px;
+	fill: var(--black);
+}
+
 /*--------------------------------------------------------------
 7.1 Box Styling
 --------------------------------------------------------------*/
@@ -1028,7 +1034,7 @@ button.owl-prev, button.owl-next{
 	padding-right: 15px;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	margin-left: 11px;
+	margin-left: -11px;
 }
 
 .slider-tooltip p{
