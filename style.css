@@ -360,6 +360,13 @@ svg{
 8.0 lists
 --------------------------------------------------------------*/
 
+nav.navbar.navbar-expand-lg{
+	position: absolute;
+  z-index: 999;
+  left: 0;
+  right: 0;
+}
+
 ul, li, ol, #sidenav li, .navbar li{
 	list-style-type: none;
 	list-style-position: outside;
@@ -384,6 +391,10 @@ li.list--checkbox {
 
 .list--no-bullets, .list--no-bullets li{
 	list-style-type: none;
+}
+
+.list--bullets, .list--bullets li{
+	list-style-type: disc !important;
 }
 
 /*--------------------------------------------------------------
@@ -432,7 +443,7 @@ button:hover{
 	cursor: pointer;
 }
 
-.btn-link__primary{
+.btn-link__primary, .faq-active{
 	background-color: var(--primary-color);
 	color: var(--white);
 }
@@ -443,7 +454,7 @@ button:hover{
 	cursor: pointer;
 }
 
-.btn-link__secondary{
+.btn-link__secondary, .btn__faq-filter{
 	background-color: none;
 	color: black;
 	border: 2px solid var(--primary-color);
@@ -476,6 +487,19 @@ button:hover{
 	cursor: pointer;
 }
 
+.btn__faq-filter{
+	padding: 1rem 3rem;
+}
+
+a.btn__faq-filter:hover{
+	color: var(--black) !important;
+}
+
+.card-header{
+	background-color: white;
+	border-bottom: none !important;
+}
+
 /*--------------------------------------------------------------
 12.0 Navigation
 --------------------------------------------------------------*/
@@ -494,7 +518,7 @@ button:hover{
 
 .sidenav a{
 	text-decoration: none;
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 	display: block;
 }
 
@@ -903,6 +927,41 @@ h2.how-it-works__header{
 13.3 Other Main Pages
 --------------------------------------------------------------*/
 
+.accordion-item{
+	background: var(--white);
+	margin-bottom: 1rem;
+	border-left: 4px solid var(--primary-color);
+	border-radius: 6px;
+}
+
+.accordion .panel-title>a.collapsed:before {
+font-family: "Font Awesome 5 Solid";
+font-display: fallback;
+float: right!important;
+font-weight: 900;
+content: "\f078";
+margin-left: 15px;
+}
+.accordion .panel-title>a:before {
+float: right!important;
+font-family: "Font Awesome 5 Solid";
+font-display: fallback;
+font-weight: 900;
+content: "\f077";
+padding-right: 5px;
+margin-left: 15px;
+}
+
+.panel-title{
+	color: var(--black);
+	font-weight: bold;
+	padding-left: 0 !important;
+	transition: var(--siteTransition);
+}
+
+.panel-title:hover, .panel-title:active{
+	color: var(--primary-color);
+}
 /*--------------------------------------------------------------
 13.4 Page.PHP
 --------------------------------------------------------------*/
@@ -1454,6 +1513,12 @@ input[type=range]::-ms-thumb {
 	}
 	.testimonials__review{
 		font-size: 1.25rem;
+	}
+	.panel-title{
+		font-size: 1rem;
+	}
+	h1{
+		font-size: 3rem;
 	}
 }
 @media screen and (max-width: 767px){

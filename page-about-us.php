@@ -40,7 +40,7 @@ get_header(); ?>
 				</div>
 			</div>
 		</section>
-		<!-- Testimonials section -->
+		<!-- Contact CTA section -->
 		<?php include_once 'inc/components/cta-banner-contact.php'; ?>
 <?php
 get_footer();

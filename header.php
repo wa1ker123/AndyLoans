@@ -35,7 +35,7 @@
 
 	<!-- Header -->
 	<div class="container-fluid d-none d-lg-block">
-	<div class="row">
+	<div class="row background--secondary">
 	<section class="section--header col-6 background--white header-title-card__section">
 		<div class="row">
 			<div class="container-fluid p-fl pr-0">
@@ -116,7 +116,7 @@
 		</div>
 	</section>
 
-	<section class="col-6 background--secondary">
+	<section class="col-6 background--secondary my-auto">
 		<div class="row">
 			<div class="container-fluid">
 				<div class="row">
