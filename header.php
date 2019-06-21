@@ -118,7 +118,7 @@
 
 	<section class="col-6 background--secondary">
 		<div class="row">
-			<div class="container-fluid px-md-5">
+			<div class="container-fluid">
 				<div class="row">
 				<div class="col-12">
 					<?php include_once 'inc/components/loancalculator.php'; ?>

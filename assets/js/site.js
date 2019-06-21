@@ -13,6 +13,7 @@ function closeNav() {
 	 @id {HTMLelement}||{string} The ID to add the unique class to.
 	 @groupSelector {string} The rule to select the group of elements the unique class will be removed from
 	 @uniqueClass {string} The CSS class to add to the individual element, and remove from the group.
+	 I.e  uniqueClassToggle(this, '.btns', 'btn-glow')
 */
 
 function uniqueClassToggle(id, groupSelector, uniqueClass = 'active'){
