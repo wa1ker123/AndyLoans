@@ -336,10 +336,11 @@ svg{
 	fill: var(--primary-color);
 }
 
-.disclaimer svg{
-	width: 25px;
-	height: 25px;
-	fill: var(--black);
+.disclaimer svg {
+    width: 15px;
+    height: 15px;
+    fill: var(--black);
+    margin-right: 5px;
 }
 
 /*--------------------------------------------------------------
@@ -365,6 +366,9 @@ svg{
 /*--------------------------------------------------------------
 8.0 lists
 --------------------------------------------------------------*/
+#outline, #outline path{
+	fill: #ffffff;
+}
 
 nav.navbar.navbar-expand-lg{
 	position: absolute;
@@ -1482,6 +1486,12 @@ input[type=range]::-ms-thumb {
 @media screen and (max-width: 1080px){
 }
 @media screen and (max-width: 1024px){
+	.section--header {
+    padding-top: 10rem;
+	}
+	.header-title-card {
+		padding: 2rem;
+	}
 	.p-fl{
 		padding-left: 3rem;
 		padding-right: 3rem;
@@ -1499,6 +1509,12 @@ input[type=range]::-ms-thumb {
 	section{
 		padding-top: 2rem;
 		padding-bottom: 2rem;
+	}
+	.header-title-card__usp-title{
+		color: var(--black);
+	}
+	.header-title-card__usp-copy{
+		color: var(--black);
 	}
 	.how-it-works-card{
 		min-height: unset;
@@ -1528,6 +1544,9 @@ input[type=range]::-ms-thumb {
 	}
 }
 @media screen and (max-width: 767px){
+	#outline, #outline path{
+		fill: #151515;
+	}
 	.p-fl{
     padding-left: 2rem;
     padding-right: 2rem;

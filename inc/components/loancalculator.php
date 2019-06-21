@@ -33,9 +33,9 @@
 	</div>
 
 	<!-- Trust Images -->
-	<div class="row">
+	<div class="row my-3">
 		<div class="col-12 text-center">
-			<img class="px-3" src="<?php echo DIRECTORY ?>/assets/images/image-mcafee.png" alt="Mcafee Secure">
+			<img class="px-3" src="<?php echo DIRECTORY ?>/assets/images/image-mcafee-black.png" alt="Mcafee Secure">
 			<img class="px-3" src="<?php echo DIRECTORY ?>/assets/images/image-comodo.png" alt="Comodo">
 		</div>
 	</div>
