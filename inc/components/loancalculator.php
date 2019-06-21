@@ -21,8 +21,8 @@
 			<input type="range" name="loan_amount" aria-label="Loan Amount" id="loan-amount" value="<?php echo LOAN_DEFAULT_VALUE ?>" min="<?php echo LOAN_MIN; ?>" max="<?php echo LOAN_MAX; ?>" step="<?php echo LOAN_AMOUNT_STEP; ?>">
 		</div>
 		<div class="col-12 d-flex justify-content-between">
-			<p class="d-inline"><?php echo $loanAmountUnit . number_format(LOAN_MIN); ?></p>
-			<p class="d-inline"><?php echo $loanAmountUnit . number_format(LOAN_MAX); ?></p>
+			<p class="d-inline"><?php echo LOAN_CURRENCY_UNIT . number_format(LOAN_MIN); ?></p>
+			<p class="d-inline"><?php echo LOAN_CURRENCY_UNIT . number_format(LOAN_MAX); ?></p>
 		</div>
 	</div>
 
