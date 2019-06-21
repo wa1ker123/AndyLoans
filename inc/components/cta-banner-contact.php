@@ -6,7 +6,7 @@
 <p>
 Need more information about our services? Don’t hesitate to contact our team.
 </p>
-<a href="<?php echo get_site_url(); ?>/contact-us/" class="btn btn-link__primary cta-banner__button color--black">View all FAQs</a>
+<a href="<?php echo get_site_url(); ?>/contact/" class="btn btn-link__primary cta-banner__button color--black">Contact Us</a>
 </div>
 </div>
 </div>
