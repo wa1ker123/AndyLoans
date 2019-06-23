@@ -103,7 +103,7 @@
             <div class="row">
                <!-- Section Title -->
                <div class="col-12 text-center m-auto">
-                  <h2 class="section-header">FAQ</h2>
+                  <h1 class="">FAQ</h2>
                   <p class="mb-4 mb-lg-5">
                      You can bet that Andy's got the answers to your questions.
                   </p>

@@ -6,7 +6,7 @@
    * @since 1.0
    * @version 1.0
    */
-  
+
   get_header(); ?>
 <div id="primary" class="content-area">
   <main id="main" class="site-main" role="main">
@@ -14,7 +14,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
-            <h2 class="section-header mb-4">Contact Us</h2>
+            <h1 class="mb-4">Contact Us</h1>
             <p>Got a question? Drop your question the form below and we'll get back to you as soon as possible</p>
           </div>
           <div class="col-12 text-center mx-auto">
