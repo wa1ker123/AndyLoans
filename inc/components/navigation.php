@@ -13,7 +13,7 @@
           <li><a class="color--black mx-3 px-2 py-2" href="<?php echo get_site_url(); ?>/faq/">FAQ</a></li>
           <li><a class="color--black mx-3 px-2 py-2" href="<?php echo get_site_url(); ?>/about/">About Us</a></li>
           <li><a class="color--black mx-3 px-2 py-2" href="<?php echo get_site_url(); ?>/blog/">Blog</a></li>
-          <li><a class="color--black mx-3 px-2 py-2" href="<?php echo get_site_url(); ?>/contact-us/">Contact</a></li>
+          <li><a class="color--black mx-3 px-2 py-2" href="<?php echo get_site_url(); ?>/contact/">Contact</a></li>
         </ul>
       </nav>
     </div>

@@ -243,6 +243,16 @@ p, .nav-item{
 	justify-content: center;
 }
 
+input.wpcf7-form-control, textarea.wpcf7-form-control.wpcf7-textarea {
+    box-shadow: none;
+    border: 2px solid;
+		padding-left: 8pt;
+}
+
+input.wpcf7-form-control.wpcf7-submit {
+    text-transform: uppercase;
+}
+
 /*--------------------------------------------------------------
 7.0 General Formatting and Layout
 --------------------------------------------------------------*/
