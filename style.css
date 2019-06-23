@@ -1140,7 +1140,6 @@ input[type=range]::-moz-range-track {
 
 	background: var(--white);
 	border-radius: 25px;
-	border: 2px solid var(--primary-color);
 }
 
 input[type="range"]::-moz-range-progress {
