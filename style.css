@@ -981,7 +981,7 @@ h2.how-it-works__header{
 	border-radius: 6px;
 }
 
-.accordion-item{
+.accordion-item:hover{
 	box-shadow: 0px 12px 24px rgba(254,132,14,0.2);
 }
 
