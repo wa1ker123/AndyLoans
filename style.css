@@ -982,21 +982,21 @@ h2.how-it-works__header{
 }
 
 .accordion .panel-title>a.collapsed:before {
-font-family: "Font Awesome 5 Solid";
-font-display: fallback;
+		font-family: var(--primaryFont);
 float: right!important;
-font-weight: 900;
-content: "\f078";
+font-weight: 700;
+content: "+";
 margin-left: 15px;
+color: var(--primary-color);
 }
 .accordion .panel-title>a:before {
+	font-family: var(--primaryFont);
 float: right!important;
-font-family: "Font Awesome 5 Solid";
-font-display: fallback;
-font-weight: 900;
-content: "\f077";
+font-weight: 700;
+content: "-";
 padding-right: 5px;
 margin-left: 15px;
+color: var(--primary-color);
 }
 
 .panel-title{
