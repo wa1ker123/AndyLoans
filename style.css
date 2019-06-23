@@ -633,6 +633,10 @@ nav.fill ul li a:hover:after {
 	border-radius: 15px 0px 0px 0px;
 }
 
+.header-title-card__usp:hover {
+    transform: translateX(5px);
+}
+
 .header-title-card__section{
 		background: url('assets/images/image-header-bg.png');
 		background-size: cover;
@@ -921,6 +925,10 @@ h2.how-it-works__header{
 	background-size: 100% !important;
 	position: relative;
 	border-radius: 10px;
+}
+
+.loan-types__image:hover {
+    transform: translateY(-10px);
 }
 
 .loan-types__title{
