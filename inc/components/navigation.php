@@ -1,6 +1,6 @@
 <!-- Main Navigation -->
 <nav class="navbar navbar-expand-lg">
-  <div class="container-fluid px-5 d-flex flex-row justify-content-between">
+  <div class="container-fluid px-5 my-2 d-flex flex-row justify-content-between">
     <a href="<?php echo get_site_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-andy-loans.png" id="site-logo" alt="Andy Loans logo" class="img-fluid"></a>
     <button class="navbar-toggler navbar-dark white-bg" onclick="openNav()" type="button" data-toggle="collapse" data-target="#mySideNav" aria-controls="mySideNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
