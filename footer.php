@@ -7,7 +7,7 @@
    */
   ?>
 </div><!-- #content -->
-<footer id="colophon" class="site-footer" role="contentinfo">
+<footer id="colophon" class="site-footer <?php if(is_404()){echo 'd-none';}else{echo 'd-block';}?>" role="contentinfo">
   <!-- Footer -->
   <section class="section--footer primary-color-bg">
     <div class="container">
@@ -54,7 +54,7 @@
           <h4 class="footer__header">Socials</h4>
           <span><a class="social-link px-2" target="_blank" href=""><?php  echo file_get_contents(DIRECTORY . '/assets/svgs/brands/facebook.svg'); ?></a></span>
           <span><a class="social-link px-2" target="_blank" href=""><?php  echo file_get_contents(DIRECTORY . '/assets/svgs/brands/twitter.svg'); ?></a></span>
-          <a class="d-block btn-link__primary px-2 color--black mt-3 mb-3 text-center" data-toggle="modal" data-target="#borrowingWarningModal"><span class="fas fa-exclamation-triangle mr-2 color--black"></span>WARNING ABOUT BORROWING</a>
+          <!-- <a class="d-block btn-link__primary px-2 color--black mt-3 mb-3 text-center" data-toggle="modal" data-target="#borrowingWarningModal"><span class="fas fa-exclamation-triangle mr-2 color--black"></span>WARNING ABOUT BORROWING</a> -->
           <img src="<?php echo DIRECTORY; ?>/assets/images/image-safe-and-secure.png" alt="Illustration of hand holding a phone" class="img-fluid d-block mb-4">
           <img src="<?php echo DIRECTORY; ?>/assets/images/image-mcafee.png" alt="Illustration of hand holding a phone" class="img-fluid d-inline-block mr-3" style="width: 6rem;">
           <img src="<?php echo DIRECTORY; ?>/assets/images/image-comodo.png" alt="Illustration of hand holding a phone" class="img-fluid d-inline-block" style="width: 6rem;">

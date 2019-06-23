@@ -10,9 +10,9 @@
    */
   	//grabs the page slug and appends it as a GET variable to mark which pages users have come from
   	getPageSource();
-  
+
   ?>
-  
+
 <!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js no-svg">
   <head>
@@ -24,7 +24,7 @@
   <body <?php body_class(); ?> >
     <div id="page" class="site">
     <!-- Site Header -->
-    <header id="masthead" role="banner">
+    <header id="masthead" role="banner" class="<?php if(is_404()){echo 'd-none';}else{echo 'd-block';}?>">
       <!-- Navigation and Sidenav -->
       <?php include_once 'inc/components/navigation.php' ?>
       <!-- Header -->
@@ -203,6 +203,6 @@
       </div>
     </header>
     <!-- #masthead -->
-    
+
     <div class="site-content-contain">
     <div id="content" class="site-content">

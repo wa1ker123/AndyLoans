@@ -36,7 +36,7 @@
     </div>
   </div>
   <!-- Disclaimer -->
-  <div class="row py-2">
+  <div class="row py-2 d-none">
     <div class="col-12">
       <small class="disclaimer" id="loan-disclaimer"></small>
     </div>
