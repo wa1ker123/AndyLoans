@@ -15,7 +15,7 @@ get_header(); ?>
 		<div class="container">
 		  <div class="row">
 		    <!-- How It Works: Step 1-->
-		    <div class="col-12 mb-5 mb-lg-0">
+		    <div class="col-12 mb-5">
 		        <img src="<?php echo DIRECTORY; ?>/assets/images/illustration-how-it-works-3.png" alt="Illustration of hand holding a phone" class="img-fluid how-it-works-card__image mb-5 ml-3 ml-lg-0">
 		        <div class="">
 		          <h2 class="how-it-works-card__title text-left">In A Nutshell</h3>
