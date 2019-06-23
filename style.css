@@ -1139,12 +1139,13 @@ input[type=range]::-moz-range-track {
 	cursor: pointer;
 	height: 16px;
 	background: var(--white);
-	border-radius: 25px;
+	border-radius: 50px;
 }
 
 input[type="range"]::-moz-range-progress {
  background-color: var(--primary-color);
  height: 16px;
+border-radius: 50px;
 }
 
 input[type=range]::-moz-range-thumb {
