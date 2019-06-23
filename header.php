@@ -24,7 +24,7 @@
   <body <?php body_class(); ?> >
     <div id="page" class="site">
     <!-- Site Header -->
-    <header id="masthead" role="banner" class="<?php if(is_404()){echo 'd-none';}else{echo 'd-block';}?>">
+    <header id="masthead" role="banner" class="<?php if(is_404()||is_page('404')){echo 'd-none';}else{echo 'd-block';}?>">
       <!-- Navigation and Sidenav -->
       <?php include_once 'inc/components/navigation.php' ?>
       <!-- Header -->
