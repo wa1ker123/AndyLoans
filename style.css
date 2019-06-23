@@ -1004,6 +1004,7 @@ color: var(--primary-color);
 	font-weight: bold;
 	padding-left: 0 !important;
 	transition: var(--siteTransition);
+	cursor: pointer;
 }
 
 .panel-title:hover, .panel-title:active{
