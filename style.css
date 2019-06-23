@@ -54,6 +54,9 @@ button,hr,input{overflow:visible}audio,canvas,progress,video{display:inline-bloc
 /*--------------------------------------------------------------
 3.0 Colours
 --------------------------------------------------------------*/
+*{
+	transition: 0.125s;
+}
 
 html{
 	/* Colours */
@@ -893,8 +896,8 @@ h2.how-it-works__header{
 	background: rgba(254, 132, 14,0.7) !important;
 }
 
-.loan-types{
-
+.cta-banner__button:hover{
+	background: white !important;
 }
 
 .loan-types__image{
