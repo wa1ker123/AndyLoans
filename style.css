@@ -243,7 +243,7 @@ p, .nav-item{
 	justify-content: center;
 }
 
-input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required, textarea.wpcf7-form-control.wpcf7-textarea {
+input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required, input.wpcf7-form-control.wpcf7-text, textarea.wpcf7-form-control.wpcf7-textarea {
     box-shadow: none;
     border: 2px solid;
 		padding: 8pt;
