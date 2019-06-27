@@ -21,14 +21,14 @@ get_header(); ?>
 		    <div class="col-12 mb-5">
 		        <img src="<?php echo DIRECTORY; ?>/assets/images/illustration-how-it-works-3.png" alt="Illustration of hand holding a phone" class="img-fluid how-it-works-card__image mb-5 ml-3 ml-lg-0">
 		        <div class="">
-		          <h2 class="how-it-works-card__title text-left">In A Nutshell</h3>
-		          <p class="how-it-works-card__copy text-left">We’re the first stop on your journey to get the funding you need. We will find the best loan options to suit you and then put you in touch with a lender that we think can offer you the loan you’re after. One application, access to hundreds of lenders - sound good? Give it a go!  </p>
+		          <h2 class="how-it-works-card__title text-left">Andy Loans In A Nutshell</h3>
+		          <p class="how-it-works-card__copy text-left">We’re the middleman between you and your next lender. The first step on your easy loan journey. Connecting you to a lender that is ready to help, is what we do, and we do it quickly. Secure a loan online, in minutes, and we’ll do our best to find you a lender in no time.* </p>
 		        </div>
 		      </div>
 		    <!-- How It Works: Step 2-->
 				<div class="col-12 order-2 order-lg-1 my-auto">
 					<img src="<?php echo DIRECTORY; ?>/assets/images/illustration-how-it-works-2.png" alt="Illustration of hand holding a phone" class="img-fluid how-it-works-card__image mb-5 ml-3 ml-lg-0">
-	        <h2 class="section-header">What you'll need to apply</h2>
+	        <h2 class="section-header">Who is eligible?</h2>
 					<div class="loan-criteria-card mb-3">
 	          <h3 class="loan-criteria-card__title">You'll need to be:</h3>
 	          <p class="loan-criteria-card__criteria-item">Over 18 years of age</p>
@@ -45,6 +45,8 @@ get_header(); ?>
 		  </div>
 		</div>
 	</section>
+
+	<?php include_once 'inc/components/how-it-works.php';?>
 
 	<!-- Testimonials section -->
 	<?php include_once 'inc/components/testimonials.php'; ?>

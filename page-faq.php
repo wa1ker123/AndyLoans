@@ -23,7 +23,7 @@
          array_push($faqArray, $faqObject);
 
          //Faq item
-         $faqTitle = 'Does it cost extra to apply for a personal loan?';
+         $faqTitle = 'Does it cost extra to secure a personal loan?';
          $faqCategory = 'personalloans';
          $faqBody = '<p class="accordion-content mb-0 pl-0 py-3">No, our service is free of charge. We simply partner with a lender that can give you a fair go. Saving the hassle of endless searching and deciding on the ‘right’ lender. We do all that for you! </p>';
          $faqObject = new ArrayItem($faqTitle, $faqCategory,$faqBody);
@@ -51,7 +51,7 @@
          //Faq item
          $faqTitle = 'How long before I receive my personal loan?';
          $faqCategory = 'personalloans';
-         $faqBody = '<p class="accordion-content mb-0 pl-0 py-3">That depends on the lender you’re paired with. However, we do find you that lender just minutes after you submit an application, depending on when you apply.</p>';
+         $faqBody = '<p class="accordion-content mb-0 pl-0 py-3">That depends on the lender you’re paired with. However, we do find you that lender just minutes after you submit a form, depending on when you submit the form.</p>';
          $faqObject = new ArrayItem($faqTitle, $faqCategory,$faqBody);
          array_push($faqArray, $faqObject);
 
@@ -63,16 +63,23 @@
          array_push($faqArray, $faqObject);
 
          //faq item
-         $faqTitle = 'How do I apply?';
+         $faqTitle = 'How do I secure a loan?';
          $faqCategory = 'application';
-         $faqBody = '<p class="accordion-content mb-0 pl-0 py-3">Applying with Andy Loans is simple. Just follow three steps; complete an application, wait for a lender, meet your new lender! It’s that easy. Of course, the assessment of your application is subject to each individual lender and we cannot guarantee approval. If you have any questions regarding your outcome, just contact your new lender.</p>';
+         $faqBody = '<p class="accordion-content mb-0 pl-0 py-3">Securing a lender with Andy Loans is simple. Just follow three steps; complete a form, wait for a lender, meet your new lender! It’s that easy. Of course, the assessment of your submission is subject to each individual lender and we cannot guarantee approval. If you have any questions regarding your outcome, just contact your new lender.</p>';
+         $faqObject = new ArrayItem($faqTitle, $faqCategory,$faqBody);
+         array_push($faqArray, $faqObject);
+
+         //faq item
+         $faqTitle = 'Do you accept phone submissions?';
+         $faqCategory = 'application';
+         $faqBody = '<p class="accordion-content mb-0 pl-0 py-3">Andy Loans is 100% online, so there is no need to ring up - just submit a form online in minutes and have a new lender in no time. </p>';
          $faqObject = new ArrayItem($faqTitle, $faqCategory,$faqBody);
          array_push($faqArray, $faqObject);
 
          //FAQ Item
          $faqTitle = 'What happens to my data?';
          $faqCategory = 'fees';
-         $faqBody = '<p class="accordion-content mb-0 pl-0 py-3">When you apply with Andy Loans, your data is secure. We use third-party encryption to keep your data safe. If you have any concerns about your privacy, take a look at our policy.</p>';
+         $faqBody = '<p class="accordion-content mb-0 pl-0 py-3">When you work with Andy Loans, your data is secure. We use third-party encryption to keep your data safe. If you have any concerns about your privacy, take a look at our policy.</p>';
          $faqObject = new ArrayItem($faqTitle, $faqCategory,$faqBody);
          array_push($faqArray, $faqObject);
 
@@ -116,7 +123,7 @@
                         <a href="#accordion" onclick="filterSelection('personalloans')" class="btn btn__faq-filter w-100">Personal Loans</a>
                      </div>
                      <div class="col-12 col-md-4 text-center mb-2 mb-lg-0">
-                        <a href="#accordion" onclick="filterSelection('application')" class="btn btn__faq-filter w-100">Application</a>
+                        <a href="#accordion" onclick="filterSelection('application')" class="btn btn__faq-filter w-100">Securing A Loan</a>
                      </div>
                      <div class="col-12 col-md-4 text-center text-lg-right mb-2 mb-lg-0">
                         <a href="#accordion" onclick="filterSelection('feesandrepayments')" class="btn btn__faq-filter w-100">Fees & Repayments</a>

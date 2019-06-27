@@ -36,9 +36,11 @@
     </div>
   </div>
   <!-- Disclaimer -->
-  <div class="row py-2 d-none">
+  <div class="row py-2">
     <div class="col-12">
-      <small class="disclaimer" id="loan-disclaimer"></small>
+      <small class="disclaimer" id="loan-disclaimer">
+        By submitting your information you understand and agree to our Privacy Policy, Terms of Use, and E-Consent. Be sure to check out our Rates & Fees as well as our Responsibility Pledge.
+      </small>
     </div>
   </div>
 </form>

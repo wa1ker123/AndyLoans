@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-12">
         <h2 class="section-header mb-3">Types of Loans</h2>
-        <p class="mb-5">Medical bills due? Car repairs needed? We may have the h-andy loan for you.</p>
+        <p class="mb-5">Medical bills due? Car repairs needed? We may have the 'h'andy loan for you.</p>
       </div>
     </div>
   </div>
@@ -36,7 +36,7 @@
       <!-- White Goods Loans -->
       <div class="col-6 col-lg-4 col-xl-2">
         <div class="loan-types__image loan-types--image__white-goods">
-          <h4 class="loan-types__title">White Goods</h4>
+          <h4 class="loan-types__title">Appliances</h4>
         </div>
       </div>
       <!-- Holiday Loans -->

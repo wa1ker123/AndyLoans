@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
-        <h2 class="section-header how-it-works__header">H-andy Loans in Three Steps</h2>
+        <h2 class="section-header how-it-works__header">'H'andy Loans in Three Steps</h2>
       </div>
       <!-- How It Works: Step 1-->
       <div class="col-12 col-lg-4">
@@ -12,8 +12,8 @@
         <div class="container">
           <div class="how-it-works-card pt-5">
             <div class="col">
-              <h3 class="how-it-works-card__title text-left">Apply Online</h3>
-              <p class="how-it-works-card__copy text-left">To apply, just jump online and complete a fast application in minutes. </p>
+              <h3 class="how-it-works-card__title text-left">Complete the form</h3>
+              <p class="how-it-works-card__copy text-left">To secure a loan, just jump online and complete a fast form in minutes. </p>
             </div>
           </div>
         </div>
@@ -27,7 +27,7 @@
           <div class="how-it-works-card pt-5">
             <div class="col">
               <h3 class="how-it-works-card__title text-left">We Search for a Lender</h3>
-              <p class="how-it-works-card__copy text-left">We do the searching, so you don’t have to. After you submit your application, we’ll get straight to work finding you a quality lender.</p>
+              <p class="how-it-works-card__copy text-left">We do the searching, so you don’t have to. After you submit your form, we’ll get straight to work finding you a quality lender.</p>
             </div>
           </div>
         </div>
@@ -41,7 +41,7 @@
           <div class="how-it-works-card pt-5">
             <div class="col">
               <h3 class="how-it-works-card__title text-left">Cash, Without the Headache</h3>
-              <p class="how-it-works-card__copy text-left">If we find you a lender, they should be in touch shortly to go over your loan application. Approved? Then, it’s FAST cash straight to your bank.* </p>
+              <p class="how-it-works-card__copy text-left">If we find you a lender, they should be in touch shortly to go over your loan form. Approved? Then, it’s FAST cash straight to your bank.*</p>
             </div>
           </div>
         </div>

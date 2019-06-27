@@ -9,7 +9,7 @@
             <div class="cta-banner-usp">
               <h4 class="cta-banner-usp__title">100% online</h4>
               <p class="cta-banner-usp__copy">
-                Apply in minutes
+                Complete a form in minutes
               </p>
             </div>
           </div>
