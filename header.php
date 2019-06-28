@@ -27,7 +27,9 @@
     <header id="masthead" role="banner" class="<?php if(is_404()||is_page('404')){echo 'd-none';}else{echo 'd-block';}?>">
       <!-- Navigation and Sidenav -->
       <?php include_once 'inc/components/navigation.php' ?>
-      <!-- Header -->
+			<!-- Header -->
+			
+			<?php if(! is_page('application') ): ?>
       <div class="container-fluid">
         <div class="row background--secondary">
           <section class="section--header col-12 col-lg-6 background--white header-title-card__section d-none d-lg-block">
@@ -200,7 +202,9 @@
             </div>
           </section>
         </div>
-      </div>
+			</div>
+			<?php endif; ?>
+			
     </header>
     <!-- #masthead -->
 
