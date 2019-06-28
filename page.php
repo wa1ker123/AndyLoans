@@ -42,3 +42,4 @@ ul, li, ol{
 
 <?php
 get_footer();
+?>

@@ -10,7 +10,7 @@
 
 
 	/**** Website Global Constants ******/
-	define("APPLICATION_URL", 'https://apply.jacarandafinance.com.au/jf/apply');
+	define("APPLICATION_URL", get_site_url() . '/application/' );
 	define('DIRECTORY', get_template_directory_uri() );
 	define('USER_IP', real_ip() );
 	define('LAST_IP_DIGIT', substr( USER_IP , -1));
@@ -476,3 +476,116 @@ function outputLoanInformation($atts){
 }
 
 add_shortcode('LOAN_INFORMATION', 'outputLoanInformation');
+
+
+/* Hooks into WPCF7 and Submits application data to SA lead portal */
+function post_data_to_partner($contact_data){
+
+	//Credentials provided by partner
+	$username = '';
+	$API = '';
+	$endpoint = 'https://api.itmedia.xyz/post/testjson/api/v2';
+	$minLeadSalePrice = 0;
+
+
+	$applicationFormID = '298'; //CF7 ID
+
+	if(session_id() == '') {
+		session_start();
+	}
+
+	$submission = WPCF7_Submission::get_instance();
+	$posted_data = $submission->get_posted_data();
+	$submittedFormID = $posted_data['_wpcf7'];
+	
+	//If the form submitted is the application form
+	if($submission && $submittedFormID == $applicationFormID ){
+
+		$params = array();
+
+		//POST Params Provided By Us and not collected from Applicant
+		$params['username']             = $username;
+		$params['apikey']               = $API;
+		$params['campaignId']           = '1';
+		$params['ip_address']           = USER_IP;
+		$params['agent']                = $_SERVER['HTTP_USER_AGENT'];
+		$params['min_price']            = $minLeadSalePrice;
+		$params['websiteName']					= get_site_url();
+
+		$_SESSION['testdate'] = $posted_data['bDate'];
+	
+		//POST Params Provided By applicant
+		$params['amount']               = $posted_data['amount']; 
+		$params['loan_reason']          = $posted_data['loan_reason'];
+		$params['credit_type']          = $posted_data['credit_type'];
+		$params['fName']                = $posted_data['fName']; 
+		$params['lName']                = $posted_data['lName']; 
+		$params['zip']                  = $posted_data['zip']; 
+		$params['city']                 = $posted_data['city']; 
+		$params['state']                = $posted_data['state']; 
+		$params['address']              = $posted_data['address']; 
+		$params['lengthAtAddress']      = $posted_data['lengthAtAddress']; 
+		$params['licenseState']         = $posted_data['licenseState']; 
+		$params['email']                = $posted_data['email']; 
+		$params['license']              = $posted_data['license'];
+		$params['rentOwn']              = $posted_data['rentOwn']; 
+		$params['phone']                = $posted_data['phone'];
+		$params['workPhone']            = $posted_data['workPhone'];
+		$params['callTime']             = $posted_data['callTime'];
+		$params['bMonth']               = explode( '-', $posted_data['bDate'] )[2];
+		$params['bDay']                 = explode( '-', $posted_data['bDate'] )[1];
+		$params['bYear']                = explode( '-', $posted_data['bDate'] )[0];
+		$params['ssn']                  = $posted_data['ssn'];
+		$params['armedForces']          = $posted_data['armedForces'][0];
+		$params['incomeSource']         = $posted_data['incomeSource'];
+		$params['employerName']         = $posted_data['employerName'];
+		$params['timeEmployed']         = $posted_data['timeEmployed'];
+		$params['employerPhone']        = $posted_data['employerPhone'];
+		$params['jobTitle']             = $posted_data['jobTitle'];
+		$params['paidEvery']            = $posted_data['paidEvery']; 
+		// $params['nextPayday']           = $posted_data['nextPayday'];
+		// $params['secondPayday']         = $posted_data['secondPayday'];
+		$params['abaNumber']            = $posted_data['abaNumber'];
+		$params['accountNumber']        = $posted_data['accountNumber'];
+		$params['accountType']          = $posted_data['accountType'];
+		$params['bankName']             = $posted_data['bankName'];
+		$params['bankPhone']            = $posted_data['bankPhone'];
+		$params['monthsBank']           = $posted_data['monthsBank'];
+		$params['directDeposit']        = $posted_data['directDeposit'][0];
+		$params['monthlyNetIncome']     = $posted_data['monthlyNetIncome'];
+		$params['ownCar']               = $posted_data['ownCar'][0];
+		$params['note']                 = $posted_data['note'];
+		$params['websiteName']          = $posted_data['websiteName'];
+		$params['timeout']              = $posted_data['timeout'];
+		$params['lead_type']            = $posted_data['lead_type'];
+		
+		//$params['atrk']                 = $posted_data['atrk'];
+
+		$_SESSION['data'] = $params;
+
+		$ch = curl_init();
+
+		curl_setopt(    $ch,    CURLOPT_URL,               $endpoint     );
+		curl_setopt(    $ch,    CURLOPT_POST,              1             );
+		curl_setopt(    $ch,    CURLOPT_POSTFIELDS,        $params       );
+		curl_setopt(    $ch,    CURLOPT_FAILONERROR,       1             );
+		curl_setopt(    $ch,    CURLOPT_HEADER,            0             );
+		curl_setopt(    $ch,    CURLOPT_RETURNTRANSFER,    1             );
+		curl_setopt(    $ch,    CURLOPT_SSL_VERIFYPEER,    false         );
+		curl_setopt(    $ch,    CURLOPT_SSL_VERIFYHOST,    false       	 );
+		curl_setopt(    $ch,    CURLOPT_TIMEOUT,           0             );
+		
+		
+		$res = curl_exec($ch);
+		curl_close($ch);
+		
+		$res = json_decode($res);
+
+		$_SESSION['res'] = $res;
+		
+
+	}
+
+}
+
+add_action( 'wpcf7_before_send_mail', 'post_data_to_partner');

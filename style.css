@@ -1,5 +1,5 @@
 /*
-Theme Name: Theme Name
+Theme Name: Andy Loans
 Author: PrettyDamnGood
 Author URI: https://www.prettydamngood.com.au/
 Description: Site Description
@@ -237,6 +237,7 @@ p, .nav-item{
 
 /* Wordpress Contact Form 7 */
 .wpcf7-form-control-wrap{
+	display: block;
   width: 100%;
 }
 
@@ -246,7 +247,9 @@ p, .nav-item{
 	justify-content: center;
 }
 
-input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required, input.wpcf7-form-control.wpcf7-text, textarea.wpcf7-form-control.wpcf7-textarea {
+input.wpcf7-form-control.wpcf7-number
+
+input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required, input.wpcf7-form-control.wpcf7-text, textarea.wpcf7-form-control.wpcf7-textarea, input.wpcf7-form-control.wpcf7-number, .wpcf7-form-control-wrap select, .wpcf7-form-control-wrap .wpcf7-date{
     box-shadow: none;
     border: 2px solid;
 		padding: 8pt;
@@ -256,6 +259,8 @@ input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required, input.wpcf7-for
 input.wpcf7-form-control.wpcf7-submit {
     text-transform: uppercase;
 }
+
+
 
 /*--------------------------------------------------------------
 7.0 General Formatting and Layout
