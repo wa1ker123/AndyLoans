@@ -40,7 +40,7 @@ get_header(); ?>
 		</div>
 
 		<div class="col-12">
-			<?php	echo do_shortcode('[contact-form-7 id="298" title="Andy Loans Application"]'); ?>
+			<?php	echo do_shortcode('[contact-form-7 id="34" title="Andy Loans Application"]'); ?>
 		</div>
 
 	</div>

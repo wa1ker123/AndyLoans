@@ -488,7 +488,7 @@ function post_data_to_partner($contact_data){
 	$minLeadSalePrice = 0;
 
 
-	$applicationFormID = '298'; //CF7 ID
+	$applicationFormID = '34'; //CF7 ID
 
 	if(session_id() == '') {
 		session_start();
