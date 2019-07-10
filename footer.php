@@ -51,7 +51,9 @@
           <h4 class="footer__header">Socials</h4>
           <span><a class="social-link px-2" target="_blank" href=""><?php  echo file_get_contents(DIRECTORY . '/assets/svgs/brands/facebook.svg'); ?></a></span>
           <span><a class="social-link px-2" target="_blank" href=""><?php  echo file_get_contents(DIRECTORY . '/assets/svgs/brands/twitter.svg'); ?></a></span>
+
           <!-- <a class="d-block btn-link__primary px-2 color--black mt-3 mb-3 text-center" data-toggle="modal" data-target="#borrowingWarningModal"><span class="fas fa-exclamation-triangle mr-2 color--black"></span>WARNING ABOUT BORROWING</a> -->
+
           <img src="<?php echo DIRECTORY; ?>/assets/images/image-safe-and-secure.png" alt="Safe and Secure image" class="img-fluid d-block my-4">
           <img src="<?php echo DIRECTORY; ?>/assets/images/image-mcafee.png" alt="Mcafee Secure Logo" class="img-fluid d-inline-block mr-3" style="width: 6rem;">
           <img src="<?php echo DIRECTORY; ?>/assets/images/image-comodo.png" alt="Comodo Secure Logo" class="img-fluid d-inline-block" style="width: 6rem;">
@@ -77,7 +79,7 @@
 
 <?php wp_footer(); ?>
 <!-- Modal -->
-<div class="modal fade" id="borrowingWarningModal" role="dialog" aria-labelledby="borrowingWarningModalTitle" aria-hidden="true">
+<!-- <div class="modal fade" id="borrowingWarningModal" role="dialog" aria-labelledby="borrowingWarningModalTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -105,7 +107,22 @@
       </div>
     </div>
   </div>
+</div> -->
+
+<!-- Popup Modal Contact Form  -->
+<div class="modal fade" id="tipModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog pt-5" role="document">
+    <div class="modal-content">
+
+      <div class="modal-body p-4">
+				<h2 class="section-header text-center">Site Coming Soon!</h2>
+				<?php echo do_shortcode('[contact-form-7 id="11" title="Tip Subscription Form"]') ?>
+      </div>
+
+    </div>
+  </div>
 </div>
+
 </body>
 <script>
   jQuery('.owl-carousel').owlCarousel({

@@ -28,3 +28,7 @@ function uniqueClassToggle(id, groupSelector, uniqueClass = 'active'){
 	typeof(id) != "object" ? document.getElementById(id).classList.add(uniqueClass) : id.classList.add(uniqueClass);
 
 }
+
+window.addEventListener('DOMContentLoaded', function(){
+	setTimeout( function(){modalServe();}, 3000  )
+});
