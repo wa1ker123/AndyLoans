@@ -19,9 +19,6 @@
       <div class="d-flex  flex-column flex-md-row justify-content-between">
         <div class="mb-3 mb-md-0">
           <h4 class="footer__header">Quick navigation</h4>
-          <a href="<?php echo get_site_url(); ?>/costs/">
-            <p class="footer__item">Costs</p>
-          </a>
           <a href="<?php echo get_site_url(); ?>/how-it-works/">
             <p class="footer__item">How It Works</p>
           </a>
@@ -68,7 +65,7 @@
       <div class="row">
         <div class="col" style="opacity:0.7;">
           <b>Material disclosure</b>
-          <small>APR Disclosure. Some states have laws limiting the Annual Percentage Rate (APR) that a lender can charge you. APRs for cash advance loans range from 200% and 1386%, APRs for installment loans range from 6.63% to 225%, and APRs for personal loans range from 4.99% to 450% and vary by lender. Loans from a state that has no limiting laws or loans from a bank not governed by state laws may have an even higher APR. The APR is the rate at which your loan accrues interest and is based upon the amount, cost and term of your loan, repayment amounts and timing of payments. Lenders are legally required to show you the APR and other terms of your loan before you execute a loan agreement. APR rates are subject to change.</small>
+          <small>Andy Loans is not a lender or broker and is not affiliated with any lenders or brokers. Andy Loans does not make lending or credit decisions. This website does not constitute an offer or solicitation to lend. The form on the website is not an application for a loan. Loan terms will vary. Loan availability will vary by state. Approval is not guaranteed. Third-party provider may conduct credit checks related to the user’s request. Andy Loans will share PII with third-parties for the purpose of connecting consumers with lenders. Andy Loans is compensated for connecting consumers with lenders. Late payments of loans may result in additional fees or collection activities, or both. Each Lender has its own terms and conditions. Please familiarize yourself with your Lender’s policies for further information. Non-payment of your loan could result in collection activities. Each Lender has its own terms and conditions. Please familiarize yourself with your Lender’s policies for further information. Every Lender has its own renewal policy, which likely differs from Lender to Lender. Please review your particular Lender’s renewal policy.</small>
         </div>
       </div>
     </div>

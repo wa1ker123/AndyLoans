@@ -11,8 +11,8 @@
       <div class="col-12 col-lg-6">
       <!-- Quick FAQs card 1 -->
         <div class="faq-card">
-          <h3 class="faq-card__title">How do I secure a loan?</h3>
-          <p class="faq-card__copy">Jump online and complete a form in just a few minutes.</p>
+          <h3 class="faq-card__title">How do I submit a loan request?</h3>
+          <p class="faq-card__copy">Jump online and complete a loan request form in just a few minutes.</p>
         </div>
         <!-- Quick FAQs card 2 -->
         <div class="faq-card">
@@ -21,7 +21,7 @@
         </div>
         <!-- Quick FAQs card 3 -->
         <div class="faq-card">
-          <h3 class="faq-card__title">Can I secure a loan with bad credit?</h3>
+          <h3 class="faq-card__title">Can I submit a request with bad credit?</h3>
           <p class="faq-card__copy">Yes, absolutely! We’re ready to give every applicant a fair go and find them a lender that is ready to lend a hand.</p>
         </div>
       </div>
