@@ -29,6 +29,24 @@ function uniqueClassToggle(id, groupSelector, uniqueClass = 'active'){
 
 }
 
+function modalServe(){
+
+	//if the popup has already been served
+	if(localStorage.getItem('modalserved') == 'true'){
+		return
+	}
+
+	//If it has not
+	else{
+		//We show the popup
+		jQuery('#tipModal').modal('show');
+
+		//Mark popup as served in localStorage
+		localStorage.setItem('modalserved', 'true');
+	}
+
+}
+
 window.addEventListener('DOMContentLoaded', function(){
 	setTimeout( function(){modalServe();}, 3000  )
 });
