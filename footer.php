@@ -114,8 +114,8 @@
   <div class="modal-dialog pt-5" role="document">
     <div class="modal-content">
 
-      <div class="modal-body p-4">
-				<h2 class="section-header text-center">Site Coming Soon!</h2>
+      <div class="modal-body p-4 text-center">
+				<h2 class="section-header ">Site Coming Soon!</h2>
         <p>Got a question? Drop your question the form below and we'll get back to you as soon as possible</p>
 				<?php echo do_shortcode('[contact-form-7 id="47" title="Popup Contact Form"]') ?>
       </div>
