@@ -116,7 +116,8 @@
 
       <div class="modal-body p-4">
 				<h2 class="section-header text-center">Site Coming Soon!</h2>
-				<?php echo do_shortcode('[contact-form-7 id="11" title="Tip Subscription Form"]') ?>
+        <p>Got a question? Drop your question the form below and we'll get back to you as soon as possible</p>
+				<?php echo do_shortcode('[contact-form-7 id="47" title="Popup Contact Form"]') ?>
       </div>
 
     </div>
