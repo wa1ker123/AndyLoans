@@ -41,7 +41,7 @@
           <div class="how-it-works-card pt-5">
             <div class="col">
               <h3 class="how-it-works-card__title text-left">Cash, Without the Headache</h3>
-              <p class="how-it-works-card__copy text-left">If we find you a lender, they should be in touch shortly to go over your loan form. Approved? Then, it’s FAST cash straight to your bank.*</p>
+              <p class="how-it-works-card__copy text-left">If you are connected with a lender, you will be able to review the loan offer with all the terms and conditions. Approved? Then, it’s FAST cash straight to your bank.*</p>
             </div>
           </div>
         </div>

@@ -25,12 +25,12 @@
          //Faq item
          $faqTitle = 'Does it cost extra to secure a personal loan?';
          $faqCategory = 'personalloans';
-         $faqBody = '<p class="accordion-content mb-0 pl-0 py-3">No, our service is free of charge. We simply partner with a lender that can give you a fair go. Saving the hassle of endless searching and deciding on the ‘right’ lender. We do all that for you! </p>';
+         $faqBody = '<p class="accordion-content mb-0 pl-0 py-3">No, our service is free of charge. We simply partner with a lender that can give you a fair go. Saving the hassle of endless searching and deciding on a lender that can work for you. We do all that for you! </p>';
          $faqObject = new ArrayItem($faqTitle, $faqCategory,$faqBody);
          array_push($faqArray, $faqObject);
 
          //Faq item
-         $faqTitle = 'How do I qualify for your service?';
+         $faqTitle = 'What are the requirements to submit a loan request?';
          $faqCategory = 'personalloans';
          $faqBody = '		<p class="accordion-content mb-0 pl-0 py-3">You’ll need to be:</p>
          <ul class="list--bullets">
@@ -51,14 +51,14 @@
          //Faq item
          $faqTitle = 'How long before I receive my personal loan?';
          $faqCategory = 'personalloans';
-         $faqBody = '<p class="accordion-content mb-0 pl-0 py-3">That depends on the lender you’re paired with. However, we do find you that lender just minutes after you submit a form, depending on when you submit the form.</p>';
+         $faqBody = '<p class="accordion-content mb-0 pl-0 py-3">That depends on the lender you’re connected with. However, we attempt to connect you with a lender just minutes after you submit a form.</p>';
          $faqObject = new ArrayItem($faqTitle, $faqCategory,$faqBody);
          array_push($faqArray, $faqObject);
 
          //Faq item
          $faqTitle = 'Do Andy Loans offer loans in my state?';
          $faqCategory = 'personalloans';
-         $faqBody = '<p class="accordion-content mb-0 pl-0 py-3">Loan and lender offerings will differ from state to state, as each state has its own lending regulations in place. Once you select the state you live in during your application, we’ll let you know if you’re eligible. </p>';
+         $faqBody = '<p class="accordion-content mb-0 pl-0 py-3">Loan and lender offerings will differ from state to state, as each state has its own lending regulations in place. Once you select the state you live in during your online loan request form.</p>';
          $faqObject = new ArrayItem($faqTitle, $faqCategory,$faqBody);
          array_push($faqArray, $faqObject);
 
