@@ -21,6 +21,10 @@ get_header(); ?>
 ul, li, ol{
 	list-style-type: circle;
 }
+p img {
+	display: block;
+	margin: 0 auto;
+}
 </style>
 
 <div id="primary" class="content-area">
