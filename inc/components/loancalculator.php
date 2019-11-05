@@ -24,7 +24,7 @@
   <!-- Apply -->
   <div class="row">
     <div class="col-12 text-center">
-      <button type="submit" id="slider-submit" class="btn btn-link__primary color--black bold w-100 mb-3 mb-md-4">Get Started</button>
+      <button type="submit" id="slider-submit" class="btn btn-link__primary color--black bold w-100 mb-3 mb-md-4" onclick="gtag('event', 'click', {'event_category' : 'buttons', 'event_label' : 'calculator-apply'});">Get Started</button>
       <p class="disclaimer"><?php echo file_get_contents(DIRECTORY . '/assets/svgs/solid/lock.svg') ?>Your data is <span class="bold">safe</span> and <span class="bold">secure</span>.</p>
     </div>
   </div>
